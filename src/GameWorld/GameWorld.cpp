@@ -3,6 +3,9 @@
 #include "pvz/GameObject/Sunflower.hpp"  // 包含向日葵头文件
 #include "pvz/GameObject/Grid.hpp"        // 包含种植位头文件
 #include "pvz/utils.hpp"                  // 包含常量定义
+#include "pvz/GameObject/SeedButton.hpp"
+#include "pvz/GameObject/ShovelButton.hpp"
+
 
 void GameWorld::Init() {
     // 创建背景
@@ -26,6 +29,57 @@ void GameWorld::Init() {
             AddObject(grid);
         }
     }
+    // 初始化状态
+    m_selectedSeed = nullptr;
+    m_shovelSelected = false;
+    // 创建种子按钮
+    const int seedButtonY = WINDOW_HEIGHT - 44;
+    int seedButtonX = 130;
+
+    // 向日葵种子
+    AddObject(std::make_shared<SeedButton>(
+        ImageID::SEED_SUNFLOWER,
+        seedButtonX, seedButtonY,
+        50,  // 价格
+        this
+    ));
+
+    // 豌豆射手种子
+    seedButtonX += 60;
+    AddObject(std::make_shared<SeedButton>(
+        ImageID::SEED_PEASHOOTER,
+        seedButtonX, seedButtonY,
+        100, this
+    ));
+
+    // 坚果墙种子
+    seedButtonX += 60;
+    AddObject(std::make_shared<SeedButton>(
+        ImageID::SEED_WALLNUT,
+        seedButtonX, seedButtonY,
+        50, this
+    ));
+
+    // 樱桃炸弹种子
+    seedButtonX += 60;
+    AddObject(std::make_shared<SeedButton>(
+        ImageID::SEED_CHERRY_BOMB,
+        seedButtonX, seedButtonY,
+        150, this
+    ));
+
+    // 双发射手种子
+    seedButtonX += 60;
+    AddObject(std::make_shared<SeedButton>(
+        ImageID::SEED_REPEATER,
+        seedButtonX, seedButtonY,
+        200, this
+    ));
+
+    // 创建铲子按钮
+    AddObject(std::make_shared<ShovelButton>(
+        600, WINDOW_HEIGHT - 40, this
+    ));
 }
 
 LevelStatus GameWorld::Update() {

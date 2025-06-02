@@ -8,6 +8,8 @@ add_library(
         Plant.cpp
         Sunflower.cpp
         Grid.cpp
+        ShovelButton.cpp
+        SeedButton.cpp
 )
 
 target_link_libraries(

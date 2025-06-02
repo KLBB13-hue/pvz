@@ -5,36 +5,44 @@
 #include <memory>
 
 #include "pvz/Framework/WorldBase.hpp"
-
 #include "pvz/GameObject/GameObject.hpp"
-
 #include "pvz/Framework/TextBase.hpp"
 #include "pvz/utils.hpp"
 
+class SeedButton; // 前置声明
+
 class GameWorld : public WorldBase {
 public:
-  // Consider:
-  // Use shared_from_this() instead of "this" to create a pointer to oneself?
-  // Use unique_ptr<> / shared_ptr<> to manage GameObjects?
-  GameWorld() = default;
-  ~GameWorld() = default;
+    GameWorld() = default;
+    ~GameWorld() = default;
 
-  void Init() override;
+    void Init() override;
+    LevelStatus Update() override;
+    void CleanUp() override;
 
-  LevelStatus Update() override;
+    void AddObject(std::shared_ptr<GameObject> object) {
+        m_gameObjects.push_back(object);
+    }
 
-  void CleanUp() override;
+    // 选中状态管理
+    void SetSelectedSeed(SeedButton* seed) {
+        m_selectedSeed = seed;
+        m_shovelSelected = false;
+    }
+    void SetShovelSelected(bool selected) {
+        m_shovelSelected = selected;
+        m_selectedSeed = nullptr;
+    }
+    bool IsSeedSelected() const { return m_selectedSeed != nullptr; }
+    bool IsShovelSelected() const { return m_shovelSelected; }
+    SeedButton* GetSelectedSeed() const { return m_selectedSeed; }
 
-  void AddPlant(int x, int y);
+    void AddPlant(int x, int y);
 
 private:
-  std::list<std::shared_ptr<GameObject>> m_gameObjects;
-
-public:
-  void AddObject(std::shared_ptr<GameObject> object) {
-    m_gameObjects.push_back(object);
-  }
-
+    std::list<std::shared_ptr<GameObject>> m_gameObjects;
+    SeedButton* m_selectedSeed = nullptr; // 当前选中的种子
+    bool m_shovelSelected = false;        // 铲子是否被选中
 };
 
 #endif // !GAMEWORLD_HPP__
