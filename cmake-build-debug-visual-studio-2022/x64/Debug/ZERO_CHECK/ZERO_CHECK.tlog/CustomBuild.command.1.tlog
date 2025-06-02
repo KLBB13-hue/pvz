@@ -1,0 +1,10 @@
+^C:\USERS\YLBBK\DESKTOP\PVZ_RELEASE2\ATTACHMENT\CMAKE-BUILD-DEBUG-VISUAL-STUDIO-2022\CMAKEFILES\DD665261422767B7485DB18137E5C3E2\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\bin\cmake.exe" -SC:/Users/YLBBK/Desktop/pvz_release2/attachment -BC:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022 --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/PvZ.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

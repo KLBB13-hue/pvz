@@ -1,0 +1,944 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      The system is: Windows - 10.0.26100 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.13.19+0d9f5a35a
+      鐢熸垚鍚姩鏃堕棿涓?2025/6/1 22:08:35銆?
+      
+      鑺傜偣 1 涓婄殑椤圭洰鈥淐:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\3.30.5\\CompilerIdC\\CompilerIdC.vcxproj鈥?榛樿鐩爣)銆?
+      PrepareForBuild:
+        姝ｅ湪鍒涘缓鐩綍鈥淒ebug\\鈥濄€?
+        宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+        姝ｅ湪鍒涘缓鐩綍鈥淒ebug\\CompilerIdC.tlog\\鈥濄€?
+      InitializeBuildStatus:
+        姝ｅ湪鍒涘缓鈥淒ebug\\CompilerIdC.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+        姝ｅ湪瀵光€淒ebug\\CompilerIdC.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\3.30.5\\CompilerIdC\\CompilerIdC.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        姝ｅ湪鍒犻櫎鏂囦欢鈥淒ebug\\CompilerIdC.tlog\\unsuccessfulbuild鈥濄€?
+        姝ｅ湪瀵光€淒ebug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate鈥濇墽琛?Touch 浠诲姟銆?
+      宸插畬鎴愮敓鎴愰」鐩€淐:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\3.30.5\\CompilerIdC\\CompilerIdC.vcxproj鈥?榛樿鐩爣)鐨勬搷浣溿€?
+      
+      宸叉垚鍔熺敓鎴愩€?
+          0 涓鍛?
+          0 涓敊璇?
+      
+      宸茬敤鏃堕棿 00:00:01.52
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/3.30.5/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.13.19+0d9f5a35a
+      鐢熸垚鍚姩鏃堕棿涓?2025/6/1 22:08:37銆?
+      
+      鑺傜偣 1 涓婄殑椤圭洰鈥淐:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\3.30.5\\CompilerIdCXX\\CompilerIdCXX.vcxproj鈥?榛樿鐩爣)銆?
+      PrepareForBuild:
+        姝ｅ湪鍒涘缓鐩綍鈥淒ebug\\鈥濄€?
+        宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+        姝ｅ湪鍒涘缓鐩綍鈥淒ebug\\CompilerIdCXX.tlog\\鈥濄€?
+      InitializeBuildStatus:
+        姝ｅ湪鍒涘缓鈥淒ebug\\CompilerIdCXX.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+        姝ｅ湪瀵光€淒ebug\\CompilerIdCXX.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\3.30.5\\CompilerIdCXX\\CompilerIdCXX.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        姝ｅ湪鍒犻櫎鏂囦欢鈥淒ebug\\CompilerIdCXX.tlog\\unsuccessfulbuild鈥濄€?
+        姝ｅ湪瀵光€淒ebug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate鈥濇墽琛?Touch 浠诲姟銆?
+      宸插畬鎴愮敓鎴愰」鐩€淐:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\3.30.5\\CompilerIdCXX\\CompilerIdCXX.vcxproj鈥?榛樿鐩爣)鐨勬搷浣溿€?
+      
+      宸叉垚鍔熺敓鎴愩€?
+          0 涓鍛?
+          0 涓敊璇?
+      
+      宸茬敤鏃堕棿 00:00:01.48
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/3.30.5/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-iazfre"
+      binary: "C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-iazfre"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-iazfre'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_b4039.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.13.19+0d9f5a35a
+        鐢熸垚鍚姩鏃堕棿涓?2025/6/1 22:08:39銆?
+        
+        鑺傜偣 1 涓婄殑椤圭洰鈥淐:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-iazfre\\cmTC_b4039.vcxproj鈥?榛樿鐩爣)銆?
+        PrepareForBuild:
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_b4039.dir\\Debug\\鈥濄€?
+          宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+          姝ｅ湪鍒涘缓鐩綍鈥淐:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-iazfre\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_b4039.dir\\Debug\\cmTC_b4039.tlog\\鈥濄€?
+        InitializeBuildStatus:
+          姝ｅ湪鍒涘缓鈥渃mTC_b4039.dir\\Debug\\cmTC_b4039.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+          姝ｅ湪瀵光€渃mTC_b4039.dir\\Debug\\cmTC_b4039.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b4039.dir\\Debug\\\\" /Fd"cmTC_b4039.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\JetBrains\\CLion 2024.3.2\\bin\\cmake\\win\\x64\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c"
+          鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.43.34809 鐗?
+          鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b4039.dir\\Debug\\\\" /Fd"cmTC_b4039.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\JetBrains\\CLion 2024.3.2\\bin\\cmake\\win\\x64\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c"
+          CMakeCCompilerABI.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-iazfre\\Debug\\cmTC_b4039.exe" /INCREMENTAL /ILK:"cmTC_b4039.dir\\Debug\\cmTC_b4039.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-iazfre/Debug/cmTC_b4039.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-iazfre/Debug/cmTC_b4039.lib" /MACHINE:X64  /machine:x64 cmTC_b4039.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_b4039.vcxproj -> C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-iazfre\\Debug\\cmTC_b4039.exe
+        FinalizeBuildStatus:
+          姝ｅ湪鍒犻櫎鏂囦欢鈥渃mTC_b4039.dir\\Debug\\cmTC_b4039.tlog\\unsuccessfulbuild鈥濄€?
+          姝ｅ湪瀵光€渃mTC_b4039.dir\\Debug\\cmTC_b4039.tlog\\cmTC_b4039.lastbuildstate鈥濇墽琛?Touch 浠诲姟銆?
+        宸插畬鎴愮敓鎴愰」鐩€淐:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-iazfre\\cmTC_b4039.vcxproj鈥?榛樿鐩爣)鐨勬搷浣溿€?
+        
+        宸叉垚鍔熺敓鎴愩€?
+            0 涓鍛?
+            0 涓敊璇?
+        
+        宸茬敤鏃堕棿 00:00:01.35
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'C': C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.43.34808/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Running the C compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.43.34808/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.43.34809.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-nnfiiw"
+      binary: "C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-nnfiiw"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-nnfiiw'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_b8f4b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.13.19+0d9f5a35a
+        鐢熸垚鍚姩鏃堕棿涓?2025/6/1 22:08:41銆?
+        
+        鑺傜偣 1 涓婄殑椤圭洰鈥淐:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-nnfiiw\\cmTC_b8f4b.vcxproj鈥?榛樿鐩爣)銆?
+        PrepareForBuild:
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_b8f4b.dir\\Debug\\鈥濄€?
+          宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+          姝ｅ湪鍒涘缓鐩綍鈥淐:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-nnfiiw\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_b8f4b.dir\\Debug\\cmTC_b8f4b.tlog\\鈥濄€?
+        InitializeBuildStatus:
+          姝ｅ湪鍒涘缓鈥渃mTC_b8f4b.dir\\Debug\\cmTC_b8f4b.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+          姝ｅ湪瀵光€渃mTC_b8f4b.dir\\Debug\\cmTC_b8f4b.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_b8f4b.dir\\Debug\\\\" /Fd"cmTC_b8f4b.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\JetBrains\\CLion 2024.3.2\\bin\\cmake\\win\\x64\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
+          鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.43.34809 鐗?
+          鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_b8f4b.dir\\Debug\\\\" /Fd"cmTC_b8f4b.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\JetBrains\\CLion 2024.3.2\\bin\\cmake\\win\\x64\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
+          CMakeCXXCompilerABI.cpp
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-nnfiiw\\Debug\\cmTC_b8f4b.exe" /INCREMENTAL /ILK:"cmTC_b8f4b.dir\\Debug\\cmTC_b8f4b.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-nnfiiw/Debug/cmTC_b8f4b.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-nnfiiw/Debug/cmTC_b8f4b.lib" /MACHINE:X64  /machine:x64 cmTC_b8f4b.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_b8f4b.vcxproj -> C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-nnfiiw\\Debug\\cmTC_b8f4b.exe
+        FinalizeBuildStatus:
+          姝ｅ湪鍒犻櫎鏂囦欢鈥渃mTC_b8f4b.dir\\Debug\\cmTC_b8f4b.tlog\\unsuccessfulbuild鈥濄€?
+          姝ｅ湪瀵光€渃mTC_b8f4b.dir\\Debug\\cmTC_b8f4b.tlog\\cmTC_b8f4b.lastbuildstate鈥濇墽琛?Touch 浠诲姟銆?
+        宸插畬鎴愮敓鎴愰」鐩€淐:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-nnfiiw\\cmTC_b8f4b.vcxproj鈥?榛樿鐩爣)鐨勬搷浣溿€?
+        
+        宸叉垚鍔熺敓鎴愩€?
+            0 涓鍛?
+            0 涓敊璇?
+        
+        宸茬敤鏃堕棿 00:00:01.40
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'CXX': C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.43.34808/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Running the CXX compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.43.34808/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.43.34809.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "third_party/freeglut/CMakeLists.txt:362 (CHECK_INCLUDE_FILES)"
+    checks:
+      - "Looking for include file sys/types.h"
+    directories:
+      source: "C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-9zdsxw"
+      binary: "C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-9zdsxw"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "HAVE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-9zdsxw'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_9d8e6.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.13.19+0d9f5a35a
+        鐢熸垚鍚姩鏃堕棿涓?2025/6/1 22:08:43銆?
+        
+        鑺傜偣 1 涓婄殑椤圭洰鈥淐:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-9zdsxw\\cmTC_9d8e6.vcxproj鈥?榛樿鐩爣)銆?
+        PrepareForBuild:
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_9d8e6.dir\\Debug\\鈥濄€?
+          宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+          姝ｅ湪鍒涘缓鐩綍鈥淐:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-9zdsxw\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_9d8e6.dir\\Debug\\cmTC_9d8e6.tlog\\鈥濄€?
+        InitializeBuildStatus:
+          姝ｅ湪鍒涘缓鈥渃mTC_9d8e6.dir\\Debug\\cmTC_9d8e6.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+          姝ｅ湪瀵光€渃mTC_9d8e6.dir\\Debug\\cmTC_9d8e6.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_9d8e6.dir\\Debug\\\\" /Fd"cmTC_9d8e6.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-9zdsxw\\HAVE_SYS_TYPES_H.c"
+          鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.43.34809 鐗?
+          鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_9d8e6.dir\\Debug\\\\" /Fd"cmTC_9d8e6.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-9zdsxw\\HAVE_SYS_TYPES_H.c"
+          HAVE_SYS_TYPES_H.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-9zdsxw\\Debug\\cmTC_9d8e6.exe" /INCREMENTAL /ILK:"cmTC_9d8e6.dir\\Debug\\cmTC_9d8e6.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-9zdsxw/Debug/cmTC_9d8e6.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-9zdsxw/Debug/cmTC_9d8e6.lib" /MACHINE:X64  /machine:x64 cmTC_9d8e6.dir\\Debug\\HAVE_SYS_TYPES_H.obj
+          cmTC_9d8e6.vcxproj -> C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-9zdsxw\\Debug\\cmTC_9d8e6.exe
+        FinalizeBuildStatus:
+          姝ｅ湪鍒犻櫎鏂囦欢鈥渃mTC_9d8e6.dir\\Debug\\cmTC_9d8e6.tlog\\unsuccessfulbuild鈥濄€?
+          姝ｅ湪瀵光€渃mTC_9d8e6.dir\\Debug\\cmTC_9d8e6.tlog\\cmTC_9d8e6.lastbuildstate鈥濇墽琛?Touch 浠诲姟銆?
+        宸插畬鎴愮敓鎴愰」鐩€淐:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-9zdsxw\\cmTC_9d8e6.vcxproj鈥?榛樿鐩爣)鐨勬搷浣溿€?
+        
+        宸叉垚鍔熺敓鎴愩€?
+            0 涓鍛?
+            0 涓敊璇?
+        
+        宸茬敤鏃堕棿 00:00:01.40
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "third_party/freeglut/CMakeLists.txt:363 (CHECK_INCLUDE_FILES)"
+    checks:
+      - "Looking for include file unistd.h"
+    directories:
+      source: "C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-33lfk4"
+      binary: "C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-33lfk4"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "HAVE_UNISTD_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-33lfk4'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_411cd.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.13.19+0d9f5a35a
+        鐢熸垚鍚姩鏃堕棿涓?2025/6/1 22:08:44銆?
+        
+        鑺傜偣 1 涓婄殑椤圭洰鈥淐:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-33lfk4\\cmTC_411cd.vcxproj鈥?榛樿鐩爣)銆?
+        PrepareForBuild:
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_411cd.dir\\Debug\\鈥濄€?
+          宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+          姝ｅ湪鍒涘缓鐩綍鈥淐:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-33lfk4\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_411cd.dir\\Debug\\cmTC_411cd.tlog\\鈥濄€?
+        InitializeBuildStatus:
+          姝ｅ湪鍒涘缓鈥渃mTC_411cd.dir\\Debug\\cmTC_411cd.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+          姝ｅ湪瀵光€渃mTC_411cd.dir\\Debug\\cmTC_411cd.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_411cd.dir\\Debug\\\\" /Fd"cmTC_411cd.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-33lfk4\\HAVE_UNISTD_H.c"
+          鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.43.34809 鐗?
+          鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_411cd.dir\\Debug\\\\" /Fd"cmTC_411cd.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-33lfk4\\HAVE_UNISTD_H.c"
+          HAVE_UNISTD_H.c
+        C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-33lfk4\\HAVE_UNISTD_H.c(2,10): error C1083: 鏃犳硶鎵撳紑鍖呮嫭鏂囦欢: 鈥渦nistd.h鈥? No such file or directory [C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-33lfk4\\cmTC_411cd.vcxproj]
+        宸插畬鎴愮敓鎴愰」鐩€淐:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-33lfk4\\cmTC_411cd.vcxproj鈥?榛樿鐩爣)鐨勬搷浣?- 澶辫触銆?
+        
+        鐢熸垚澶辫触銆?
+        
+        鈥淐:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-33lfk4\\cmTC_411cd.vcxproj鈥?榛樿鐩爣) (1) ->
+        (ClCompile 鐩爣) -> 
+          C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-33lfk4\\HAVE_UNISTD_H.c(2,10): error C1083: 鏃犳硶鎵撳紑鍖呮嫭鏂囦欢: 鈥渦nistd.h鈥? No such file or directory [C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-33lfk4\\cmTC_411cd.vcxproj]
+        
+            0 涓鍛?
+            1 涓敊璇?
+        
+        宸茬敤鏃堕棿 00:00:00.60
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "third_party/freeglut/CMakeLists.txt:364 (CHECK_INCLUDE_FILES)"
+    checks:
+      - "Looking for include file sys/time.h"
+    directories:
+      source: "C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-qa4050"
+      binary: "C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-qa4050"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "HAVE_SYS_TIME_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-qa4050'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_15d4d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.13.19+0d9f5a35a
+        鐢熸垚鍚姩鏃堕棿涓?2025/6/1 22:08:45銆?
+        
+        鑺傜偣 1 涓婄殑椤圭洰鈥淐:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-qa4050\\cmTC_15d4d.vcxproj鈥?榛樿鐩爣)銆?
+        PrepareForBuild:
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_15d4d.dir\\Debug\\鈥濄€?
+          宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+          姝ｅ湪鍒涘缓鐩綍鈥淐:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-qa4050\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_15d4d.dir\\Debug\\cmTC_15d4d.tlog\\鈥濄€?
+        InitializeBuildStatus:
+          姝ｅ湪鍒涘缓鈥渃mTC_15d4d.dir\\Debug\\cmTC_15d4d.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+          姝ｅ湪瀵光€渃mTC_15d4d.dir\\Debug\\cmTC_15d4d.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_15d4d.dir\\Debug\\\\" /Fd"cmTC_15d4d.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-qa4050\\HAVE_SYS_TIME_H.c"
+          鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.43.34809 鐗?
+          鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_15d4d.dir\\Debug\\\\" /Fd"cmTC_15d4d.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-qa4050\\HAVE_SYS_TIME_H.c"
+          HAVE_SYS_TIME_H.c
+        C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-qa4050\\HAVE_SYS_TIME_H.c(2,10): error C1083: 鏃犳硶鎵撳紑鍖呮嫭鏂囦欢: 鈥渟ys/time.h鈥? No such file or directory [C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-qa4050\\cmTC_15d4d.vcxproj]
+        宸插畬鎴愮敓鎴愰」鐩€淐:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-qa4050\\cmTC_15d4d.vcxproj鈥?榛樿鐩爣)鐨勬搷浣?- 澶辫触銆?
+        
+        鐢熸垚澶辫触銆?
+        
+        鈥淐:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-qa4050\\cmTC_15d4d.vcxproj鈥?榛樿鐩爣) (1) ->
+        (ClCompile 鐩爣) -> 
+          C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-qa4050\\HAVE_SYS_TIME_H.c(2,10): error C1083: 鏃犳硶鎵撳紑鍖呮嫭鏂囦欢: 鈥渟ys/time.h鈥? No such file or directory [C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-qa4050\\cmTC_15d4d.vcxproj]
+        
+            0 涓鍛?
+            1 涓敊璇?
+        
+        宸茬敤鏃堕棿 00:00:00.60
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "third_party/freeglut/CMakeLists.txt:365 (CHECK_INCLUDE_FILES)"
+    checks:
+      - "Looking for include file stdbool.h"
+    directories:
+      source: "C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-u3fkkm"
+      binary: "C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-u3fkkm"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "HAVE_STDBOOL_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-u3fkkm'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_75fad.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.13.19+0d9f5a35a
+        鐢熸垚鍚姩鏃堕棿涓?2025/6/1 22:08:46銆?
+        
+        鑺傜偣 1 涓婄殑椤圭洰鈥淐:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-u3fkkm\\cmTC_75fad.vcxproj鈥?榛樿鐩爣)銆?
+        PrepareForBuild:
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_75fad.dir\\Debug\\鈥濄€?
+          宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+          姝ｅ湪鍒涘缓鐩綍鈥淐:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-u3fkkm\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_75fad.dir\\Debug\\cmTC_75fad.tlog\\鈥濄€?
+        InitializeBuildStatus:
+          姝ｅ湪鍒涘缓鈥渃mTC_75fad.dir\\Debug\\cmTC_75fad.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+          姝ｅ湪瀵光€渃mTC_75fad.dir\\Debug\\cmTC_75fad.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_75fad.dir\\Debug\\\\" /Fd"cmTC_75fad.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-u3fkkm\\HAVE_STDBOOL_H.c"
+          鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.43.34809 鐗?
+          鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_75fad.dir\\Debug\\\\" /Fd"cmTC_75fad.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-u3fkkm\\HAVE_STDBOOL_H.c"
+          HAVE_STDBOOL_H.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-u3fkkm\\Debug\\cmTC_75fad.exe" /INCREMENTAL /ILK:"cmTC_75fad.dir\\Debug\\cmTC_75fad.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-u3fkkm/Debug/cmTC_75fad.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-u3fkkm/Debug/cmTC_75fad.lib" /MACHINE:X64  /machine:x64 cmTC_75fad.dir\\Debug\\HAVE_STDBOOL_H.obj
+          cmTC_75fad.vcxproj -> C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-u3fkkm\\Debug\\cmTC_75fad.exe
+        FinalizeBuildStatus:
+          姝ｅ湪鍒犻櫎鏂囦欢鈥渃mTC_75fad.dir\\Debug\\cmTC_75fad.tlog\\unsuccessfulbuild鈥濄€?
+          姝ｅ湪瀵光€渃mTC_75fad.dir\\Debug\\cmTC_75fad.tlog\\cmTC_75fad.lastbuildstate鈥濇墽琛?Touch 浠诲姟銆?
+        宸插畬鎴愮敓鎴愰」鐩€淐:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-u3fkkm\\cmTC_75fad.vcxproj鈥?榛樿鐩爣)鐨勬搷浣溿€?
+        
+        宸叉垚鍔熺敓鎴愩€?
+            0 涓鍛?
+            0 涓敊璇?
+        
+        宸茬敤鏃堕棿 00:00:01.31
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "third_party/freeglut/CMakeLists.txt:366 (CHECK_INCLUDE_FILES)"
+    checks:
+      - "Looking for include file sys/param.h"
+    directories:
+      source: "C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-yjlbkr"
+      binary: "C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-yjlbkr"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "HAVE_SYS_PARAM_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-yjlbkr'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_3ac3e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.13.19+0d9f5a35a
+        鐢熸垚鍚姩鏃堕棿涓?2025/6/1 22:08:48銆?
+        
+        鑺傜偣 1 涓婄殑椤圭洰鈥淐:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-yjlbkr\\cmTC_3ac3e.vcxproj鈥?榛樿鐩爣)銆?
+        PrepareForBuild:
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_3ac3e.dir\\Debug\\鈥濄€?
+          宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+          姝ｅ湪鍒涘缓鐩綍鈥淐:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-yjlbkr\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_3ac3e.dir\\Debug\\cmTC_3ac3e.tlog\\鈥濄€?
+        InitializeBuildStatus:
+          姝ｅ湪鍒涘缓鈥渃mTC_3ac3e.dir\\Debug\\cmTC_3ac3e.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+          姝ｅ湪瀵光€渃mTC_3ac3e.dir\\Debug\\cmTC_3ac3e.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3ac3e.dir\\Debug\\\\" /Fd"cmTC_3ac3e.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-yjlbkr\\HAVE_SYS_PARAM_H.c"
+          鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.43.34809 鐗?
+          鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3ac3e.dir\\Debug\\\\" /Fd"cmTC_3ac3e.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-yjlbkr\\HAVE_SYS_PARAM_H.c"
+          HAVE_SYS_PARAM_H.c
+        C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-yjlbkr\\HAVE_SYS_PARAM_H.c(2,10): error C1083: 鏃犳硶鎵撳紑鍖呮嫭鏂囦欢: 鈥渟ys/param.h鈥? No such file or directory [C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-yjlbkr\\cmTC_3ac3e.vcxproj]
+        宸插畬鎴愮敓鎴愰」鐩€淐:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-yjlbkr\\cmTC_3ac3e.vcxproj鈥?榛樿鐩爣)鐨勬搷浣?- 澶辫触銆?
+        
+        鐢熸垚澶辫触銆?
+        
+        鈥淐:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-yjlbkr\\cmTC_3ac3e.vcxproj鈥?榛樿鐩爣) (1) ->
+        (ClCompile 鐩爣) -> 
+          C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-yjlbkr\\HAVE_SYS_PARAM_H.c(2,10): error C1083: 鏃犳硶鎵撳紑鍖呮嫭鏂囦欢: 鈥渟ys/param.h鈥? No such file or directory [C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-yjlbkr\\cmTC_3ac3e.vcxproj]
+        
+            0 涓鍛?
+            1 涓敊璇?
+        
+        宸茬敤鏃堕棿 00:00:00.59
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "third_party/freeglut/CMakeLists.txt:367 (CHECK_INCLUDE_FILES)"
+    checks:
+      - "Looking for include file sys/ioctl.h"
+    directories:
+      source: "C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-9131hp"
+      binary: "C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-9131hp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "HAVE_SYS_IOCTL_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-9131hp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_b368c.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.13.19+0d9f5a35a
+        鐢熸垚鍚姩鏃堕棿涓?2025/6/1 22:08:49銆?
+        
+        鑺傜偣 1 涓婄殑椤圭洰鈥淐:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-9131hp\\cmTC_b368c.vcxproj鈥?榛樿鐩爣)銆?
+        PrepareForBuild:
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_b368c.dir\\Debug\\鈥濄€?
+          宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+          姝ｅ湪鍒涘缓鐩綍鈥淐:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-9131hp\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_b368c.dir\\Debug\\cmTC_b368c.tlog\\鈥濄€?
+        InitializeBuildStatus:
+          姝ｅ湪鍒涘缓鈥渃mTC_b368c.dir\\Debug\\cmTC_b368c.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+          姝ｅ湪瀵光€渃mTC_b368c.dir\\Debug\\cmTC_b368c.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b368c.dir\\Debug\\\\" /Fd"cmTC_b368c.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-9131hp\\HAVE_SYS_IOCTL_H.c"
+          鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.43.34809 鐗?
+          鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b368c.dir\\Debug\\\\" /Fd"cmTC_b368c.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-9131hp\\HAVE_SYS_IOCTL_H.c"
+          HAVE_SYS_IOCTL_H.c
+        C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-9131hp\\HAVE_SYS_IOCTL_H.c(2,10): error C1083: 鏃犳硶鎵撳紑鍖呮嫭鏂囦欢: 鈥渟ys/ioctl.h鈥? No such file or directory [C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-9131hp\\cmTC_b368c.vcxproj]
+        宸插畬鎴愮敓鎴愰」鐩€淐:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-9131hp\\cmTC_b368c.vcxproj鈥?榛樿鐩爣)鐨勬搷浣?- 澶辫触銆?
+        
+        鐢熸垚澶辫触銆?
+        
+        鈥淐:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-9131hp\\cmTC_b368c.vcxproj鈥?榛樿鐩爣) (1) ->
+        (ClCompile 鐩爣) -> 
+          C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-9131hp\\HAVE_SYS_IOCTL_H.c(2,10): error C1083: 鏃犳硶鎵撳紑鍖呮嫭鏂囦欢: 鈥渟ys/ioctl.h鈥? No such file or directory [C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-9131hp\\cmTC_b368c.vcxproj]
+        
+            0 涓鍛?
+            1 涓敊璇?
+        
+        宸茬敤鏃堕棿 00:00:00.58
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "third_party/freeglut/CMakeLists.txt:368 (CHECK_INCLUDE_FILES)"
+    checks:
+      - "Looking for include file fcntl.h"
+    directories:
+      source: "C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-30fbzb"
+      binary: "C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-30fbzb"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "HAVE_FCNTL_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-30fbzb'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_bbd10.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.13.19+0d9f5a35a
+        鐢熸垚鍚姩鏃堕棿涓?2025/6/1 22:08:50銆?
+        
+        鑺傜偣 1 涓婄殑椤圭洰鈥淐:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-30fbzb\\cmTC_bbd10.vcxproj鈥?榛樿鐩爣)銆?
+        PrepareForBuild:
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_bbd10.dir\\Debug\\鈥濄€?
+          宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+          姝ｅ湪鍒涘缓鐩綍鈥淐:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-30fbzb\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_bbd10.dir\\Debug\\cmTC_bbd10.tlog\\鈥濄€?
+        InitializeBuildStatus:
+          姝ｅ湪鍒涘缓鈥渃mTC_bbd10.dir\\Debug\\cmTC_bbd10.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+          姝ｅ湪瀵光€渃mTC_bbd10.dir\\Debug\\cmTC_bbd10.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_bbd10.dir\\Debug\\\\" /Fd"cmTC_bbd10.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-30fbzb\\HAVE_FCNTL_H.c"
+          鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.43.34809 鐗?
+          鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_bbd10.dir\\Debug\\\\" /Fd"cmTC_bbd10.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-30fbzb\\HAVE_FCNTL_H.c"
+          HAVE_FCNTL_H.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-30fbzb\\Debug\\cmTC_bbd10.exe" /INCREMENTAL /ILK:"cmTC_bbd10.dir\\Debug\\cmTC_bbd10.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-30fbzb/Debug/cmTC_bbd10.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-30fbzb/Debug/cmTC_bbd10.lib" /MACHINE:X64  /machine:x64 cmTC_bbd10.dir\\Debug\\HAVE_FCNTL_H.obj
+          cmTC_bbd10.vcxproj -> C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-30fbzb\\Debug\\cmTC_bbd10.exe
+        FinalizeBuildStatus:
+          姝ｅ湪鍒犻櫎鏂囦欢鈥渃mTC_bbd10.dir\\Debug\\cmTC_bbd10.tlog\\unsuccessfulbuild鈥濄€?
+          姝ｅ湪瀵光€渃mTC_bbd10.dir\\Debug\\cmTC_bbd10.tlog\\cmTC_bbd10.lastbuildstate鈥濇墽琛?Touch 浠诲姟銆?
+        宸插畬鎴愮敓鎴愰」鐩€淐:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-30fbzb\\cmTC_bbd10.vcxproj鈥?榛樿鐩爣)鐨勬搷浣溿€?
+        
+        宸叉垚鍔熺敓鎴愩€?
+            0 涓鍛?
+            0 涓敊璇?
+        
+        宸茬敤鏃堕棿 00:00:01.22
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "third_party/freeglut/CMakeLists.txt:369 (CHECK_INCLUDE_FILES)"
+    checks:
+      - "Looking for include file usbhid.h"
+    directories:
+      source: "C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-wowm0u"
+      binary: "C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-wowm0u"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "HAVE_USBHID_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-wowm0u'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_aa881.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.13.19+0d9f5a35a
+        鐢熸垚鍚姩鏃堕棿涓?2025/6/1 22:08:51銆?
+        
+        鑺傜偣 1 涓婄殑椤圭洰鈥淐:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-wowm0u\\cmTC_aa881.vcxproj鈥?榛樿鐩爣)銆?
+        PrepareForBuild:
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_aa881.dir\\Debug\\鈥濄€?
+          宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+          姝ｅ湪鍒涘缓鐩綍鈥淐:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-wowm0u\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_aa881.dir\\Debug\\cmTC_aa881.tlog\\鈥濄€?
+        InitializeBuildStatus:
+          姝ｅ湪鍒涘缓鈥渃mTC_aa881.dir\\Debug\\cmTC_aa881.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+          姝ｅ湪瀵光€渃mTC_aa881.dir\\Debug\\cmTC_aa881.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_aa881.dir\\Debug\\\\" /Fd"cmTC_aa881.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-wowm0u\\HAVE_USBHID_H.c"
+          鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.43.34809 鐗?
+          鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_aa881.dir\\Debug\\\\" /Fd"cmTC_aa881.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-wowm0u\\HAVE_USBHID_H.c"
+          HAVE_USBHID_H.c
+        C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-wowm0u\\HAVE_USBHID_H.c(2,10): error C1083: 鏃犳硶鎵撳紑鍖呮嫭鏂囦欢: 鈥渦sbhid.h鈥? No such file or directory [C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-wowm0u\\cmTC_aa881.vcxproj]
+        宸插畬鎴愮敓鎴愰」鐩€淐:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-wowm0u\\cmTC_aa881.vcxproj鈥?榛樿鐩爣)鐨勬搷浣?- 澶辫触銆?
+        
+        鐢熸垚澶辫触銆?
+        
+        鈥淐:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-wowm0u\\cmTC_aa881.vcxproj鈥?榛樿鐩爣) (1) ->
+        (ClCompile 鐩爣) -> 
+          C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-wowm0u\\HAVE_USBHID_H.c(2,10): error C1083: 鏃犳硶鎵撳紑鍖呮嫭鏂囦欢: 鈥渦sbhid.h鈥? No such file or directory [C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-wowm0u\\cmTC_aa881.vcxproj]
+        
+            0 涓鍛?
+            1 涓敊璇?
+        
+        宸茬敤鏃堕棿 00:00:00.60
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "third_party/freeglut/CMakeLists.txt:370 (CHECK_FUNCTION_EXISTS)"
+    checks:
+      - "Looking for gettimeofday"
+    directories:
+      source: "C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-1mkgjl"
+      binary: "C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-1mkgjl"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "HAVE_GETTIMEOFDAY"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-1mkgjl'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_6f4f9.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.13.19+0d9f5a35a
+        鐢熸垚鍚姩鏃堕棿涓?2025/6/1 22:08:52銆?
+        
+        鑺傜偣 1 涓婄殑椤圭洰鈥淐:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-1mkgjl\\cmTC_6f4f9.vcxproj鈥?榛樿鐩爣)銆?
+        PrepareForBuild:
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_6f4f9.dir\\Debug\\鈥濄€?
+          宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+          姝ｅ湪鍒涘缓鐩綍鈥淐:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-1mkgjl\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_6f4f9.dir\\Debug\\cmTC_6f4f9.tlog\\鈥濄€?
+        InitializeBuildStatus:
+          姝ｅ湪鍒涘缓鈥渃mTC_6f4f9.dir\\Debug\\cmTC_6f4f9.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+          姝ｅ湪瀵光€渃mTC_6f4f9.dir\\Debug\\cmTC_6f4f9.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=gettimeofday /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6f4f9.dir\\Debug\\\\" /Fd"cmTC_6f4f9.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-1mkgjl\\CheckFunctionExists.c"
+          鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.43.34809 鐗?
+          鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=gettimeofday /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6f4f9.dir\\Debug\\\\" /Fd"cmTC_6f4f9.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-1mkgjl\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-1mkgjl\\Debug\\cmTC_6f4f9.exe" /INCREMENTAL /ILK:"cmTC_6f4f9.dir\\Debug\\cmTC_6f4f9.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-1mkgjl/Debug/cmTC_6f4f9.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-1mkgjl/Debug/cmTC_6f4f9.lib" /MACHINE:X64  /machine:x64 cmTC_6f4f9.dir\\Debug\\CheckFunctionExists.obj
+        CheckFunctionExists.obj : error LNK2019: 鏃犳硶瑙ｆ瀽鐨勫閮ㄧ鍙?gettimeofday锛屽嚱鏁?main 涓紩鐢ㄤ簡璇ョ鍙?[C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-1mkgjl\\cmTC_6f4f9.vcxproj]
+        C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-1mkgjl\\Debug\\cmTC_6f4f9.exe : fatal error LNK1120: 1 涓棤娉曡В鏋愮殑澶栭儴鍛戒护 [C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-1mkgjl\\cmTC_6f4f9.vcxproj]
+        宸插畬鎴愮敓鎴愰」鐩€淐:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-1mkgjl\\cmTC_6f4f9.vcxproj鈥?榛樿鐩爣)鐨勬搷浣?- 澶辫触銆?
+        
+        鐢熸垚澶辫触銆?
+        
+        鈥淐:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-1mkgjl\\cmTC_6f4f9.vcxproj鈥?榛樿鐩爣) (1) ->
+        (Link 鐩爣) -> 
+          CheckFunctionExists.obj : error LNK2019: 鏃犳硶瑙ｆ瀽鐨勫閮ㄧ鍙?gettimeofday锛屽嚱鏁?main 涓紩鐢ㄤ簡璇ョ鍙?[C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-1mkgjl\\cmTC_6f4f9.vcxproj]
+          C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-1mkgjl\\Debug\\cmTC_6f4f9.exe : fatal error LNK1120: 1 涓棤娉曡В鏋愮殑澶栭儴鍛戒护 [C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-1mkgjl\\cmTC_6f4f9.vcxproj]
+        
+            0 涓鍛?
+            2 涓敊璇?
+        
+        宸茬敤鏃堕棿 00:00:01.29
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "third_party/freeglut/CMakeLists.txt:371 (CHECK_FUNCTION_EXISTS)"
+    checks:
+      - "Looking for XParseGeometry"
+    directories:
+      source: "C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-oswrye"
+      binary: "C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-oswrye"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "HAVE_XPARSEGEOMETRY"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-oswrye'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_c1ad2.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.13.19+0d9f5a35a
+        鐢熸垚鍚姩鏃堕棿涓?2025/6/1 22:08:54銆?
+        
+        鑺傜偣 1 涓婄殑椤圭洰鈥淐:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-oswrye\\cmTC_c1ad2.vcxproj鈥?榛樿鐩爣)銆?
+        PrepareForBuild:
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_c1ad2.dir\\Debug\\鈥濄€?
+          宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+          姝ｅ湪鍒涘缓鐩綍鈥淐:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-oswrye\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_c1ad2.dir\\Debug\\cmTC_c1ad2.tlog\\鈥濄€?
+        InitializeBuildStatus:
+          姝ｅ湪鍒涘缓鈥渃mTC_c1ad2.dir\\Debug\\cmTC_c1ad2.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+          姝ｅ湪瀵光€渃mTC_c1ad2.dir\\Debug\\cmTC_c1ad2.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=XParseGeometry /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c1ad2.dir\\Debug\\\\" /Fd"cmTC_c1ad2.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-oswrye\\CheckFunctionExists.c"
+          鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.43.34809 鐗?
+          鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=XParseGeometry /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c1ad2.dir\\Debug\\\\" /Fd"cmTC_c1ad2.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-oswrye\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-oswrye\\Debug\\cmTC_c1ad2.exe" /INCREMENTAL /ILK:"cmTC_c1ad2.dir\\Debug\\cmTC_c1ad2.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-oswrye/Debug/cmTC_c1ad2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-oswrye/Debug/cmTC_c1ad2.lib" /MACHINE:X64  /machine:x64 cmTC_c1ad2.dir\\Debug\\CheckFunctionExists.obj
+        CheckFunctionExists.obj : error LNK2019: 鏃犳硶瑙ｆ瀽鐨勫閮ㄧ鍙?XParseGeometry锛屽嚱鏁?main 涓紩鐢ㄤ簡璇ョ鍙?[C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-oswrye\\cmTC_c1ad2.vcxproj]
+        C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-oswrye\\Debug\\cmTC_c1ad2.exe : fatal error LNK1120: 1 涓棤娉曡В鏋愮殑澶栭儴鍛戒护 [C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-oswrye\\cmTC_c1ad2.vcxproj]
+        宸插畬鎴愮敓鎴愰」鐩€淐:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-oswrye\\cmTC_c1ad2.vcxproj鈥?榛樿鐩爣)鐨勬搷浣?- 澶辫触銆?
+        
+        鐢熸垚澶辫触銆?
+        
+        鈥淐:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-oswrye\\cmTC_c1ad2.vcxproj鈥?榛樿鐩爣) (1) ->
+        (Link 鐩爣) -> 
+          CheckFunctionExists.obj : error LNK2019: 鏃犳硶瑙ｆ瀽鐨勫閮ㄧ鍙?XParseGeometry锛屽嚱鏁?main 涓紩鐢ㄤ簡璇ョ鍙?[C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-oswrye\\cmTC_c1ad2.vcxproj]
+          C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-oswrye\\Debug\\cmTC_c1ad2.exe : fatal error LNK1120: 1 涓棤娉曡В鏋愮殑澶栭儴鍛戒护 [C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-oswrye\\cmTC_c1ad2.vcxproj]
+        
+            0 涓鍛?
+            2 涓敊璇?
+        
+        宸茬敤鏃堕棿 00:00:01.33
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "third_party/freeglut/CMakeLists.txt:379 (CHECK_INCLUDE_FILES)"
+    checks:
+      - "Looking for include file stdint.h"
+    directories:
+      source: "C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-jmurbp"
+      binary: "C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-jmurbp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "HAVE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-jmurbp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_ced78.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.13.19+0d9f5a35a
+        鐢熸垚鍚姩鏃堕棿涓?2025/6/1 22:08:55銆?
+        
+        鑺傜偣 1 涓婄殑椤圭洰鈥淐:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-jmurbp\\cmTC_ced78.vcxproj鈥?榛樿鐩爣)銆?
+        PrepareForBuild:
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_ced78.dir\\Debug\\鈥濄€?
+          宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+          姝ｅ湪鍒涘缓鐩綍鈥淐:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-jmurbp\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_ced78.dir\\Debug\\cmTC_ced78.tlog\\鈥濄€?
+        InitializeBuildStatus:
+          姝ｅ湪鍒涘缓鈥渃mTC_ced78.dir\\Debug\\cmTC_ced78.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+          姝ｅ湪瀵光€渃mTC_ced78.dir\\Debug\\cmTC_ced78.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ced78.dir\\Debug\\\\" /Fd"cmTC_ced78.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-jmurbp\\HAVE_STDINT_H.c"
+          鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.43.34809 鐗?
+          鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ced78.dir\\Debug\\\\" /Fd"cmTC_ced78.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-jmurbp\\HAVE_STDINT_H.c"
+          HAVE_STDINT_H.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-jmurbp\\Debug\\cmTC_ced78.exe" /INCREMENTAL /ILK:"cmTC_ced78.dir\\Debug\\cmTC_ced78.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-jmurbp/Debug/cmTC_ced78.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-jmurbp/Debug/cmTC_ced78.lib" /MACHINE:X64  /machine:x64 cmTC_ced78.dir\\Debug\\HAVE_STDINT_H.obj
+          cmTC_ced78.vcxproj -> C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-jmurbp\\Debug\\cmTC_ced78.exe
+        FinalizeBuildStatus:
+          姝ｅ湪鍒犻櫎鏂囦欢鈥渃mTC_ced78.dir\\Debug\\cmTC_ced78.tlog\\unsuccessfulbuild鈥濄€?
+          姝ｅ湪瀵光€渃mTC_ced78.dir\\Debug\\cmTC_ced78.tlog\\cmTC_ced78.lastbuildstate鈥濇墽琛?Touch 浠诲姟銆?
+        宸插畬鎴愮敓鎴愰」鐩€淐:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-jmurbp\\cmTC_ced78.vcxproj鈥?榛樿鐩爣)鐨勬搷浣溿€?
+        
+        宸叉垚鍔熺敓鎴愩€?
+            0 涓鍛?
+            0 涓敊璇?
+        
+        宸茬敤鏃堕棿 00:00:01.36
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "third_party/freeglut/CMakeLists.txt:380 (CHECK_INCLUDE_FILES)"
+    checks:
+      - "Looking for include file inttypes.h"
+    directories:
+      source: "C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-ybe185"
+      binary: "C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-ybe185"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "HAVE_INTTYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-ybe185'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_329f8.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.13.19+0d9f5a35a
+        鐢熸垚鍚姩鏃堕棿涓?2025/6/1 22:08:57銆?
+        
+        鑺傜偣 1 涓婄殑椤圭洰鈥淐:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-ybe185\\cmTC_329f8.vcxproj鈥?榛樿鐩爣)銆?
+        PrepareForBuild:
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_329f8.dir\\Debug\\鈥濄€?
+          宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+          姝ｅ湪鍒涘缓鐩綍鈥淐:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-ybe185\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_329f8.dir\\Debug\\cmTC_329f8.tlog\\鈥濄€?
+        InitializeBuildStatus:
+          姝ｅ湪鍒涘缓鈥渃mTC_329f8.dir\\Debug\\cmTC_329f8.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+          姝ｅ湪瀵光€渃mTC_329f8.dir\\Debug\\cmTC_329f8.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_329f8.dir\\Debug\\\\" /Fd"cmTC_329f8.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-ybe185\\HAVE_INTTYPES_H.c"
+          鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.43.34809 鐗?
+          鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_329f8.dir\\Debug\\\\" /Fd"cmTC_329f8.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-ybe185\\HAVE_INTTYPES_H.c"
+          HAVE_INTTYPES_H.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-ybe185\\Debug\\cmTC_329f8.exe" /INCREMENTAL /ILK:"cmTC_329f8.dir\\Debug\\cmTC_329f8.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-ybe185/Debug/cmTC_329f8.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/CMakeFiles/CMakeScratch/TryCompile-ybe185/Debug/cmTC_329f8.lib" /MACHINE:X64  /machine:x64 cmTC_329f8.dir\\Debug\\HAVE_INTTYPES_H.obj
+          cmTC_329f8.vcxproj -> C:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-ybe185\\Debug\\cmTC_329f8.exe
+        FinalizeBuildStatus:
+          姝ｅ湪鍒犻櫎鏂囦欢鈥渃mTC_329f8.dir\\Debug\\cmTC_329f8.tlog\\unsuccessfulbuild鈥濄€?
+          姝ｅ湪瀵光€渃mTC_329f8.dir\\Debug\\cmTC_329f8.tlog\\cmTC_329f8.lastbuildstate鈥濇墽琛?Touch 浠诲姟銆?
+        宸插畬鎴愮敓鎴愰」鐩€淐:\\Users\\YLBBK\\Desktop\\pvz_release2\\attachment\\cmake-build-debug-visual-studio-2022\\CMakeFiles\\CMakeScratch\\TryCompile-ybe185\\cmTC_329f8.vcxproj鈥?榛樿鐩爣)鐨勬搷浣溿€?
+        
+        宸叉垚鍔熺敓鎴愩€?
+            0 涓鍛?
+            0 涓敊璇?
+        
+        宸茬敤鏃堕棿 00:00:01.36
+        
+      exitCode: 0
+...

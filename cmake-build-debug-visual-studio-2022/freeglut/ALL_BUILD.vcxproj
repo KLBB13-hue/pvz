@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{51A0E332-2696-39C2-8498-B33C6E495B32}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\YLBBK\Desktop\pvz_release2\attachment\third_party\freeglut\src;C:\Users\YLBBK\Desktop\pvz_release2\attachment\third_party\freeglut\include;C:\Users\YLBBK\Desktop\pvz_release2\attachment\cmake-build-debug-visual-studio-2022;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\YLBBK\Desktop\pvz_release2\attachment\third_party\freeglut\src;C:\Users\YLBBK\Desktop\pvz_release2\attachment\third_party\freeglut\include;C:\Users\YLBBK\Desktop\pvz_release2\attachment\cmake-build-debug-visual-studio-2022;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\YLBBK\Desktop\pvz_release2\attachment\third_party\freeglut\src;C:\Users\YLBBK\Desktop\pvz_release2\attachment\third_party\freeglut\include;C:\Users\YLBBK\Desktop\pvz_release2\attachment\cmake-build-debug-visual-studio-2022;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\YLBBK\Desktop\pvz_release2\attachment\third_party\freeglut\src;C:\Users\YLBBK\Desktop\pvz_release2\attachment\third_party\freeglut\include;C:\Users\YLBBK\Desktop\pvz_release2\attachment\cmake-build-debug-visual-studio-2022;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\YLBBK\Desktop\pvz_release2\attachment\third_party\freeglut\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/YLBBK/Desktop/pvz_release2/attachment/third_party/freeglut/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\bin\cmake.exe" -SC:/Users/YLBBK/Desktop/pvz_release2/attachment -BC:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022 --check-stamp-file C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/freeglut/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CheckCCompilerFlag.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CheckCSourceCompiles.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CheckFunctionExists.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CheckIncludeFile.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CheckIncludeFiles.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CheckTypeSize.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\FindOpenGL.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\GNUInstallDirs.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\YLBBK\Desktop\pvz_release2\attachment\third_party\freeglut\FreeGLUTConfig.cmake.in;C:\Users\YLBBK\Desktop\pvz_release2\attachment\third_party\freeglut\config.h.in;C:\Users\YLBBK\Desktop\pvz_release2\attachment\third_party\freeglut\freeglut.pc.in;C:\Users\YLBBK\Desktop\pvz_release2\attachment\third_party\freeglut\freeglut.rc.in;C:\Users\YLBBK\Desktop\pvz_release2\attachment\third_party\freeglut\src\fg_version.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\YLBBK\Desktop\pvz_release2\attachment\cmake-build-debug-visual-studio-2022\freeglut\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/YLBBK/Desktop/pvz_release2/attachment/third_party/freeglut/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\bin\cmake.exe" -SC:/Users/YLBBK/Desktop/pvz_release2/attachment -BC:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022 --check-stamp-file C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/freeglut/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CheckCCompilerFlag.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CheckCSourceCompiles.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CheckFunctionExists.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CheckIncludeFile.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CheckIncludeFiles.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CheckTypeSize.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\FindOpenGL.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\GNUInstallDirs.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\YLBBK\Desktop\pvz_release2\attachment\third_party\freeglut\FreeGLUTConfig.cmake.in;C:\Users\YLBBK\Desktop\pvz_release2\attachment\third_party\freeglut\config.h.in;C:\Users\YLBBK\Desktop\pvz_release2\attachment\third_party\freeglut\freeglut.pc.in;C:\Users\YLBBK\Desktop\pvz_release2\attachment\third_party\freeglut\freeglut.rc.in;C:\Users\YLBBK\Desktop\pvz_release2\attachment\third_party\freeglut\src\fg_version.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\YLBBK\Desktop\pvz_release2\attachment\cmake-build-debug-visual-studio-2022\freeglut\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/YLBBK/Desktop/pvz_release2/attachment/third_party/freeglut/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\bin\cmake.exe" -SC:/Users/YLBBK/Desktop/pvz_release2/attachment -BC:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022 --check-stamp-file C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/freeglut/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CheckCCompilerFlag.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CheckCSourceCompiles.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CheckFunctionExists.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CheckIncludeFile.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CheckIncludeFiles.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CheckTypeSize.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\FindOpenGL.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\GNUInstallDirs.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\YLBBK\Desktop\pvz_release2\attachment\third_party\freeglut\FreeGLUTConfig.cmake.in;C:\Users\YLBBK\Desktop\pvz_release2\attachment\third_party\freeglut\config.h.in;C:\Users\YLBBK\Desktop\pvz_release2\attachment\third_party\freeglut\freeglut.pc.in;C:\Users\YLBBK\Desktop\pvz_release2\attachment\third_party\freeglut\freeglut.rc.in;C:\Users\YLBBK\Desktop\pvz_release2\attachment\third_party\freeglut\src\fg_version.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\YLBBK\Desktop\pvz_release2\attachment\cmake-build-debug-visual-studio-2022\freeglut\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/YLBBK/Desktop/pvz_release2/attachment/third_party/freeglut/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\bin\cmake.exe" -SC:/Users/YLBBK/Desktop/pvz_release2/attachment -BC:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022 --check-stamp-file C:/Users/YLBBK/Desktop/pvz_release2/attachment/cmake-build-debug-visual-studio-2022/freeglut/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CheckCCompilerFlag.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CheckCSourceCompiles.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CheckFunctionExists.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CheckIncludeFile.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CheckIncludeFiles.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\CheckTypeSize.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\FindOpenGL.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\GNUInstallDirs.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\share\cmake-3.30\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\YLBBK\Desktop\pvz_release2\attachment\third_party\freeglut\FreeGLUTConfig.cmake.in;C:\Users\YLBBK\Desktop\pvz_release2\attachment\third_party\freeglut\config.h.in;C:\Users\YLBBK\Desktop\pvz_release2\attachment\third_party\freeglut\freeglut.pc.in;C:\Users\YLBBK\Desktop\pvz_release2\attachment\third_party\freeglut\freeglut.rc.in;C:\Users\YLBBK\Desktop\pvz_release2\attachment\third_party\freeglut\src\fg_version.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\YLBBK\Desktop\pvz_release2\attachment\cmake-build-debug-visual-studio-2022\freeglut\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\YLBBK\Desktop\pvz_release2\attachment\cmake-build-debug-visual-studio-2022\ZERO_CHECK.vcxproj">
+      <Project>{F51A7FEB-8879-3FE3-AAF7-F2849A73A7C8}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YLBBK\Desktop\pvz_release2\attachment\cmake-build-debug-visual-studio-2022\freeglut\freeglut.vcxproj">
+      <Project>{7E6A62C8-2C4B-3B05-8920-F398B87415D3}</Project>
+      <Name>freeglut</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\YLBBK\Desktop\pvz_release2\attachment\cmake-build-debug-visual-studio-2022\freeglut\freeglut_static.vcxproj">
+      <Project>{CFCAFAA6-DD42-3ADB-8927-7B621879981D}</Project>
+      <Name>freeglut_static</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
