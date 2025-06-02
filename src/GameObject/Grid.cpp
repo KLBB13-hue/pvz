@@ -1,16 +1,16 @@
-// Grid.cpp
 #include "pvz/GameObject/Grid.hpp"
+#include "pvz/GameWorld/GameWorld.hpp" // 包含 GameWorld 头文件
 #include "pvz/utils.hpp"
 
-Grid::Grid(int x, int y, ClickCallback callback)
-    : GameObject(ImageID::NONE,  // 使用NONE表示无贴图
+Grid::Grid(int x, int y, GameWorld* world)
+    : GameObject(ImageID::NONE,
                 x,
                 y,
-                LayerID::UI,     // 放在UI层确保可点击
+                LayerID::UI,
                 LAWN_GRID_WIDTH,
                 LAWN_GRID_HEIGHT,
                 AnimID::NO_ANIMATION),
-      m_callback(callback) {
+      m_world(world) {
 }
 
 void Grid::Update() {
@@ -18,7 +18,8 @@ void Grid::Update() {
 }
 
 void Grid::OnClick() {
-    if (m_callback) {
-        m_callback(GetX(), GetY());
+    if (m_world) {
+        // 直接调用 GameWorld 的方法
+        m_world->AddPlant(GetX(), GetY());
     }
 }

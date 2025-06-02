@@ -22,13 +22,7 @@ void GameWorld::Init() {
             int x = FIRST_COL_CENTER + col * LAWN_GRID_WIDTH;
             int y = FIRST_ROW_CENTER + row * LAWN_GRID_HEIGHT;
 
-            // 创建Grid对象，并绑定回调函数
-            auto grid = std::make_shared<Grid>(x, y, [this](int gridX, int gridY) {
-                // 当Grid被点击时，调用AddPlant方法
-                AddPlant(gridX, gridY);
-            });
-
-            // 将Grid添加到游戏对象列表
+            auto grid = std::make_shared<Grid>(x, y, this);
             AddObject(grid);
         }
     }
@@ -54,3 +48,4 @@ void GameWorld::AddPlant(int x, int y) {
     auto sunflower = std::make_shared<Sunflower>(x, y);
     AddObject(sunflower);
 }
+

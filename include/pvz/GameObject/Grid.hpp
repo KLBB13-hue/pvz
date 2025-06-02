@@ -1,22 +1,22 @@
-// Grid.hpp
 #ifndef GRID_HPP__
 #define GRID_HPP__
 
 #include "pvz/GameObject/GameObject.hpp"
-#include <functional>
+
+// 前置声明 GameWorld
+class GameWorld;
 
 class Grid : public GameObject {
 public:
-    using ClickCallback = std::function<void(int, int)>;
-
-    Grid(int x, int y, ClickCallback callback);
+    // 构造函数改为接收 GameWorld 指针
+    Grid(int x, int y, GameWorld* world);
     virtual ~Grid() = default;
 
     void Update() override;
     void OnClick() override;
 
 private:
-    ClickCallback m_callback;
+    GameWorld* m_world; // 直接持有 GameWorld 指针
 };
 
 #endif // !GRID_HPP__

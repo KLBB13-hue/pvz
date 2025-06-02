@@ -1,6 +1,7 @@
 // Sunflower.cpp
 #include "pvz/GameObject/Sunflower.hpp"
 #include "pvz/utils.hpp"
+#include <iostream>
 
 Sunflower::Sunflower(int x, int y)
     : Plant(ImageID::SUNFLOWER,
@@ -10,6 +11,7 @@ Sunflower::Sunflower(int x, int y)
             LAWN_GRID_WIDTH,
             LAWN_GRID_HEIGHT,
             AnimID::IDLE) {
+    std::cout << "向日葵种植在 (" << x << ", " << y << ")\n";
 }
 
 void Sunflower::Update() {

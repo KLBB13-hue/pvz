@@ -25,6 +25,8 @@ public:
 
   void CleanUp() override;
 
+  void AddPlant(int x, int y);
+
 private:
   std::list<std::shared_ptr<GameObject>> m_gameObjects;
 
@@ -32,7 +34,6 @@ public:
   void AddObject(std::shared_ptr<GameObject> object) {
     m_gameObjects.push_back(object);
   }
-  void AddPlant(int x, int y);
 
 };
 
