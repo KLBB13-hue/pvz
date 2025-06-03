@@ -18,8 +18,7 @@ void Grid::Update() {
 }
 
 void Grid::OnClick() {
-    if (m_world) {
-        // 直接调用 GameWorld 的方法
+    if (m_world->IsSeedSelected()) {
         m_world->AddPlant(GetX(), GetY());
     }
 }

@@ -19,10 +19,22 @@
     <ClCompile Include="C:\Users\YLBBK\Desktop\pvz_release2\attachment\src\GameObject\ShovelButton.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\YLBBK\Desktop\pvz_release2\attachment\src\GameObject\Sun.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="C:\Users\YLBBK\Desktop\pvz_release2\attachment\src\GameObject\SeedButton.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\YLBBK\Desktop\pvz_release2\attachment\src\GameObject\Sun.cpp">
+    <ClCompile Include="C:\Users\YLBBK\Desktop\pvz_release2\attachment\src\GameObject\Peashooter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YLBBK\Desktop\pvz_release2\attachment\src\GameObject\Wallnut.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YLBBK\Desktop\pvz_release2\attachment\src\GameObject\CherryBomb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YLBBK\Desktop\pvz_release2\attachment\src\GameObject\Repeater.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

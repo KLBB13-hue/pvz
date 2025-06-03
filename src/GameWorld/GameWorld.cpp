@@ -1,6 +1,10 @@
 #include "pvz/GameWorld/GameWorld.hpp"
 #include "pvz/GameObject/Background.hpp"
 #include "pvz/GameObject/Sunflower.hpp"  // 包含向日葵头文件
+#include "pvz/GameObject/Peashooter.hpp"  // 包含豌豆射手头文件
+#include "pvz/GameObject/Wallnut.hpp"  // 包含坚果墙头文件
+#include "pvz/GameObject/CherryBomb.hpp"  // 包含樱桃炸弹头文件
+#include "pvz/GameObject/Repeater.hpp"  // 包含双发射手头文件
 #include "pvz/GameObject/Grid.hpp"        // 包含种植位头文件
 #include "pvz/utils.hpp"                  // 包含常量定义
 #include "pvz/GameObject/SeedButton.hpp"
@@ -146,19 +150,45 @@ void GameWorld::CleanUp() {
 }
 
 void GameWorld::AddPlant(int x, int y) {
-    if (m_sunCount >= 50)
-    {
-        auto sunflower = std::make_shared<Sunflower>(x, y, this);
-        AddObject(sunflower);
-
-        // 扣除阳光
-        m_sunCount -= 50;
-        // 扣除阳光后更新显示
-        char buffer[20];
-        sprintf(buffer, "%d", m_sunCount);
-        m_sunText->SetText(buffer);
+    // 检查是否有选中的种子
+    if (!m_selectedSeed) {
+        return;
     }
+
+    int price = m_selectedSeed->GetPrice();
+
+    // 检查阳光是否足够
+    if (m_sunCount < price) {
+        return;
+    }
+
+    // 根据选中的种子创建对应植物
+    std::shared_ptr<Plant> newPlant;
+    switch (m_selectedSeed->GetPlantImageID()) {
+    case ImageID::SUNFLOWER:
+        newPlant = std::make_shared<Sunflower>(x, y, this);
+        break;
+    case ImageID::PEASHOOTER:
+        newPlant = std::make_shared<Peashooter>(x, y, this);
+        break;
+    case ImageID::WALLNUT:
+        newPlant = std::make_shared<Wallnut>(x, y, this);
+        break;
+    case ImageID::CHERRY_BOMB:
+        newPlant = std::make_shared<CherryBomb>(x, y, this);
+        break;
+    case ImageID::REPEATER:
+        newPlant = std::make_shared<Repeater>(x, y, this);
+        break;
+    default:
+        // 未知植物类型
+            return;
+    }
+
+    AddObject(newPlant);
+    AddSun(-price); // 扣除相应阳光
+
+    // 重置选中的种子
+    m_selectedSeed = nullptr;
 }
-
-
 

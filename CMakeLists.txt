@@ -49,6 +49,10 @@ add_executable(
         include/pvz/GameObject/SeedButton.hpp
         include/pvz/GameObject/ShovelButton.hpp
         include/pvz/GameObject/Sun.hpp
+        include/pvz/GameObject/Peashooter.hpp
+        include/pvz/GameObject/Wallnut.hpp
+        include/pvz/GameObject/CherryBomb.hpp
+        include/pvz/GameObject/Repeater.hpp
 )
 
 target_link_libraries(

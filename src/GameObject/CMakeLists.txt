@@ -9,8 +9,12 @@ add_library(
         Sunflower.cpp
         Grid.cpp
         ShovelButton.cpp
-        SeedButton.cpp
         Sun.cpp
+        SeedButton.cpp
+        Peashooter.cpp
+        Wallnut.cpp
+        CherryBomb.cpp
+        Repeater.cpp
 )
 
 target_link_libraries(
