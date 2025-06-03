@@ -18,6 +18,9 @@
     <ClInclude Include="C:\Users\YLBBK\Desktop\pvz_release2\attachment\include\pvz\GameObject\ShovelButton.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="C:\Users\YLBBK\Desktop\pvz_release2\attachment\include\pvz\GameObject\Sun.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\Users\YLBBK\Desktop\pvz_release2\attachment\CMakeLists.txt" />

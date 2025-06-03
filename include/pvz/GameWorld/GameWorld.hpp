@@ -39,10 +39,17 @@ public:
 
     void AddPlant(int x, int y);
 
+    void AddSun(int amount);
+
+    int GetSunCount() const { return m_sunCount; }
+
 private:
     std::list<std::shared_ptr<GameObject>> m_gameObjects;
     SeedButton* m_selectedSeed = nullptr; // 当前选中的种子
-    bool m_shovelSelected = false;        // 铲子是否被选中
+    bool m_shovelSelected = false;
+    int m_sunCount = 50; // 铲子是否被选中
+    int m_sunDropTimer;
+    std::shared_ptr<TextBase> m_sunText;
 };
 
 #endif // !GAMEWORLD_HPP__

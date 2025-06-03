@@ -287,6 +287,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="C:\Users\YLBBK\Desktop\pvz_release2\attachment\src\GameObject\Grid.cpp" />
     <ClCompile Include="C:\Users\YLBBK\Desktop\pvz_release2\attachment\src\GameObject\ShovelButton.cpp" />
     <ClCompile Include="C:\Users\YLBBK\Desktop\pvz_release2\attachment\src\GameObject\SeedButton.cpp" />
+    <ClCompile Include="C:\Users\YLBBK\Desktop\pvz_release2\attachment\src\GameObject\Sun.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\Users\YLBBK\Desktop\pvz_release2\attachment\cmake-build-debug-visual-studio-2022\ZERO_CHECK.vcxproj">

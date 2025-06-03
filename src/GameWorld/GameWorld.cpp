@@ -5,6 +5,7 @@
 #include "pvz/utils.hpp"                  // 包含常量定义
 #include "pvz/GameObject/SeedButton.hpp"
 #include "pvz/GameObject/ShovelButton.hpp"
+#include "pvz/GameObject/Sun.hpp"
 
 
 void GameWorld::Init() {
@@ -29,12 +30,21 @@ void GameWorld::Init() {
             AddObject(grid);
         }
     }
+
+    // 创建阳光计数文本显示（位置在左上角）
+    m_sunText = std::make_shared<TextBase>(
+        50, WINDOW_HEIGHT - 78,                          // 坐标位置 (x, y)
+        "50",                             // 初始文本
+        0.0, 0.0, 0.0,                    // 黄色 (R,G,B)
+        false                             // 不居中
+    );
     // 初始化状态
     m_selectedSeed = nullptr;
     m_shovelSelected = false;
     // 创建种子按钮
     const int seedButtonY = WINDOW_HEIGHT - 44;
     int seedButtonX = 130;
+    m_sunDropTimer = 180;
 
     // 向日葵种子
     AddObject(std::make_shared<SeedButton>(
@@ -82,11 +92,49 @@ void GameWorld::Init() {
     ));
 }
 
+void GameWorld::AddSun(int amount) {
+    m_sunCount += amount;  // 增加阳光数量
+
+    // 更新阳光文本显示
+    char buffer[20];
+    sprintf(buffer, "%d", m_sunCount);
+    m_sunText->SetText(buffer);
+}
+
 LevelStatus GameWorld::Update() {
+    // 更新阳光文本显示（确保实时更新）
+    char buffer[20];
+    sprintf(buffer, "%d", m_sunCount);
+    m_sunText->SetText(buffer);
     // 更新所有游戏对象
-    for (auto& obj : m_gameObjects) {
-        obj->Update();
+    auto it = m_gameObjects.begin();
+    while (it != m_gameObjects.end()) {
+        auto& obj = *it;
+        if (obj->IsDead()) { // 检查死亡状态
+            it = m_gameObjects.erase(it);
+        } else {
+            obj->Update();
+            ++it;
+        }
     }
+
+    // 阳光掉落逻辑
+    if (--m_sunDropTimer <= 0) {
+        // 生成随机x坐标 [75, WINDOW_WIDTH-75]
+        int sunX = randInt(75, WINDOW_WIDTH - 75);
+        int sunY = WINDOW_HEIGHT - 1; // 从屏幕顶部生成
+
+        // 创建掉落阳光
+        auto sun = std::make_shared<Sun>(
+            sunX, sunY,
+            Sun::FALLING_SUN,
+            this
+        );
+        AddObject(sun);
+
+        m_sunDropTimer = 300; // 重置计时器（10秒/300tick）
+    }
+
 
     // 这里暂时返回ONGOING，表示游戏进行中
     return LevelStatus::ONGOING;
@@ -98,8 +146,19 @@ void GameWorld::CleanUp() {
 }
 
 void GameWorld::AddPlant(int x, int y) {
-    // 在指定位置创建向日葵
-    auto sunflower = std::make_shared<Sunflower>(x, y);
-    AddObject(sunflower);
+    if (m_sunCount >= 50)
+    {
+        auto sunflower = std::make_shared<Sunflower>(x, y, this);
+        AddObject(sunflower);
+
+        // 扣除阳光
+        m_sunCount -= 50;
+        // 扣除阳光后更新显示
+        char buffer[20];
+        sprintf(buffer, "%d", m_sunCount);
+        m_sunText->SetText(buffer);
+    }
 }
+
+
 

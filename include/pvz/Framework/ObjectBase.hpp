@@ -33,6 +33,9 @@ public:
 
   friend class GameManager;
 
+  bool IsDead() const { return m_isDead; }
+  void SetDead(bool dead) { m_isDead = dead; }
+
 private:
   ImageID m_imageID;
   int m_x;
@@ -42,6 +45,7 @@ private:
   int m_height;
   AnimID m_animID;
   std::size_t m_currentFrame;
+  bool m_isDead = false;
 
 private:
   template<typename Func>

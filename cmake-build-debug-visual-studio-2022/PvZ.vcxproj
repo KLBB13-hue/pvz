@@ -333,6 +333,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\Users\YLBBK\Desktop\pvz_release2\attachment\include\pvz\GameObject\Sunflower.hpp" />
     <ClInclude Include="C:\Users\YLBBK\Desktop\pvz_release2\attachment\include\pvz\GameObject\SeedButton.hpp" />
     <ClInclude Include="C:\Users\YLBBK\Desktop\pvz_release2\attachment\include\pvz\GameObject\ShovelButton.hpp" />
+    <ClInclude Include="C:\Users\YLBBK\Desktop\pvz_release2\attachment\include\pvz\GameObject\Sun.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\Users\YLBBK\Desktop\pvz_release2\attachment\cmake-build-debug-visual-studio-2022\ZERO_CHECK.vcxproj">

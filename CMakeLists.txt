@@ -48,6 +48,7 @@ add_executable(
         include/pvz/GameObject/Sunflower.hpp
         include/pvz/GameObject/SeedButton.hpp
         include/pvz/GameObject/ShovelButton.hpp
+        include/pvz/GameObject/Sun.hpp
 )
 
 target_link_libraries(

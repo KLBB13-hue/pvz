@@ -10,6 +10,7 @@ add_library(
         Grid.cpp
         ShovelButton.cpp
         SeedButton.cpp
+        Sun.cpp
 )
 
 target_link_libraries(
