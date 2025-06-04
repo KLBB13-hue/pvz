@@ -1,21 +1,15 @@
 #include "pvz/GameObject/Grid.hpp"
-#include "pvz/GameWorld/GameWorld.hpp" // 包含 GameWorld 头文件
+#include "pvz/GameWorld/GameWorld.hpp"
 #include "pvz/utils.hpp"
+#include "pvz/GameObject/Plant.hpp"
 
 Grid::Grid(int x, int y, GameWorld* world)
-    : GameObject(ImageID::NONE,
-                x,
-                y,
-                LayerID::UI,
-                LAWN_GRID_WIDTH,
-                LAWN_GRID_HEIGHT,
-                AnimID::NO_ANIMATION),
-      m_world(world) {
-}
+    : GameObject(ImageID::NONE, x, y, LayerID::UI,
+                 LAWN_GRID_WIDTH, LAWN_GRID_HEIGHT,
+                 AnimID::NO_ANIMATION),
+      m_world(world) {}
 
-void Grid::Update() {
-    // 种植位不需要每帧更新
-}
+void Grid::Update() {}
 
 void Grid::OnClick() {
     if (m_world->IsSeedSelected()) {

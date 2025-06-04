@@ -53,6 +53,9 @@ add_executable(
         include/pvz/GameObject/Wallnut.hpp
         include/pvz/GameObject/CherryBomb.hpp
         include/pvz/GameObject/Repeater.hpp
+        include/pvz/GameObject/Zombies.hpp
+        include/pvz/GameObject/Zombies.hpp
+        include/pvz/GameObject/Pea.hpp
 )
 
 target_link_libraries(

@@ -15,6 +15,8 @@ add_library(
         Wallnut.cpp
         CherryBomb.cpp
         Repeater.cpp
+        Pea.cpp
+        Zombies.cpp
 )
 
 target_link_libraries(

@@ -33,6 +33,12 @@
     <ClInclude Include="C:\Users\YLBBK\Desktop\pvz_release2\attachment\include\pvz\GameObject\Repeater.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="C:\Users\YLBBK\Desktop\pvz_release2\attachment\include\pvz\GameObject\Zombies.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\YLBBK\Desktop\pvz_release2\attachment\include\pvz\GameObject\Pea.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\Users\YLBBK\Desktop\pvz_release2\attachment\CMakeLists.txt" />

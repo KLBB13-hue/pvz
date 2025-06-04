@@ -25,8 +25,8 @@ void Sun::Update() {
             // 向下移动（屏幕坐标系y向下为正）
             MoveTo(GetX(), GetY() - 2);
         } else { // SUNFLOWER_SUN
-            // 抛物线运动：向左移动，竖直上抛
-            MoveTo(GetX() - 1, GetY() + m_vy);
+
+            MoveTo(GetX() +2 , GetY() - m_vy );
             m_vy += 1; // 加速度向下
         }
 

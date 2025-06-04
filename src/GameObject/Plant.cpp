@@ -1,14 +1,20 @@
 #include "pvz/GameObject/Plant.hpp"
+#include "pvz/GameWorld/GameWorld.hpp"
 
-Plant::Plant(ImageID imageID, int x, int y, LayerID layer, int width, int height, AnimID animID)
-    : GameObject(imageID, x, y, layer, width, height, animID) {
-}
+Plant::Plant(ImageID imageID, int x, int y, LayerID layer,
+             int width, int height, AnimID animID)
+    : GameObject(imageID, x, y, layer, width, height, animID) {}
 
-// 添加默认实现
-void Plant::Update() {
-    // 默认空实现
-}
+void Plant::Update() {}
 
 void Plant::OnClick() {
-    // 默认空实现
+    // 空实现，无铲子功能
+}
+
+GameWorld* Plant::GetWorld() const {
+    return m_world;
+}
+
+void Plant::SetWorld(GameWorld* world) {
+    m_world = world;
 }

@@ -18,7 +18,7 @@ public:
   virtual bool operator==(const ObjectBase& other);
 
   virtual void Update() = 0;
-  virtual void OnClick() = 0;
+  virtual void OnClick() {}
 
   int GetX() const;
   int GetY() const;
@@ -36,6 +36,9 @@ public:
   bool IsDead() const { return m_isDead; }
   void SetDead(bool dead) { m_isDead = dead; }
 
+  LayerID GetLayer() const { return m_layer; } // 新增
+
+  virtual void TakeDamage(int amount) { SetDead(true); } // 默认实现
 private:
   ImageID m_imageID;
   int m_x;
