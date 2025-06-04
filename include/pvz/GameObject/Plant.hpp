@@ -15,6 +15,15 @@ public:
     virtual bool CanBeShoveled() const { return true; } // 新增
     void SetWorld(GameWorld* world);
     GameWorld* GetWorld() const;
+
+    bool ContainsPoint(int x, int y) const {
+        int left = GetX() - GetWidth() / 2;
+        int right = GetX() + GetWidth() / 2;
+        int top = GetY() - GetHeight() / 2;
+        int bottom = GetY() + GetHeight() / 2;
+        return (x >= left && x <= right && y >= top && y <= bottom);
+    }
+
 private:
     GameWorld* m_world = nullptr;
 

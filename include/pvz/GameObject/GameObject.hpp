@@ -12,6 +12,7 @@ public:
   GameObject(ImageID imageID, int x, int y, LayerID layer,
               int width, int height, AnimID animID);
   virtual ~GameObject() = default;
+    ImageID GetImageID() const { return ObjectBase::GetImageID(); }
 
 
 

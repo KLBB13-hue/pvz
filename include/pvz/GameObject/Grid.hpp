@@ -2,26 +2,48 @@
 #define GRID_HPP__
 
 #include "pvz/GameObject/GameObject.hpp"
+#include <memory>
+#include "pvz/GameObject/Plant.hpp"
 
-// 前置声明 GameWorld
 class GameWorld;
 
 class Grid : public GameObject {
 public:
-    // 构造函数改为接收 GameWorld 指针
+    // 修改构造函数：层级改为 LAYER_UI
     Grid(int x, int y, GameWorld* world);
     virtual ~Grid() = default;
 
-    void Update() override;
+    void Update() override {}
     void OnClick() override;
 
-    // 新增方法：设置/获取当前网格上的植物
-    void SetPlant(std::shared_ptr<class Plant> plant) { m_plant = plant; }
-    std::shared_ptr<class Plant> GetPlant() const { return m_plant.lock(); }
+    void ClearIfDead() {
+        if (auto plant = m_plant.lock()) {
+            if (plant->IsDead()) {
+                m_plant.reset();
+            }
+        }
+    }
+
+    // 添加植物存在性检查
+    bool HasPlant() const {
+        return !m_plant.expired();
+    }
+
+    void SetPlant(std::shared_ptr<class Plant> plant) {
+        if (plant) {
+            m_plant = plant;
+        } else {
+            m_plant.reset();
+        }
+    }
+
+    std::shared_ptr<class Plant> GetPlant() const {
+        return m_plant.lock();
+    }
 
 private:
-    GameWorld* m_world; // 直接持有 GameWorld 指针
-    std::weak_ptr<class Plant> m_plant; // 新增：当前网格上的植物
+    GameWorld* m_world;
+    std::weak_ptr<class Plant> m_plant;
 };
 
 #endif // !GRID_HPP__

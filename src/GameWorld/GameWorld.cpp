@@ -86,6 +86,12 @@ void GameWorld::Init() {
         seedButtonX, seedButtonY,
         200, this
     ));
+
+    int shovelX = 600;
+    int shovelY = WINDOW_HEIGHT - 40;
+    auto shovelButton = std::make_shared<ShovelButton>(shovelX, shovelY, this);
+    AddObject(shovelButton);
+    m_shovelButton = shovelButton;
 }
 
 void GameWorld::AddSun(int amount) {
@@ -104,6 +110,17 @@ LevelStatus GameWorld::Update() {
     while (it != m_gameObjects.end()) {
         auto& obj = *it;
         if (obj->IsDead()) {
+            // 如果是植物，清理网格引用
+            if (auto plant = dynamic_cast<Plant*>(obj.get())) {
+                for (auto& grid : m_grids) {
+                    // 使用 GetPlant() 获取 shared_ptr
+                    if (auto gridPlant = grid->GetPlant()) {
+                        if (gridPlant.get() == plant) {
+                            grid->SetPlant(nullptr); // 清空网格引用
+                        }
+                    }
+                }
+            }
             it = m_gameObjects.erase(it);
         } else {
             obj->Update();
@@ -119,6 +136,20 @@ LevelStatus GameWorld::Update() {
         m_sunDropTimer = 300;
     }
 
+    // 更新铲子选中状态
+    if (m_shovelButton) {
+        m_shovelSelected = m_shovelButton->IsSelected();
+    }
+
+    // 确保铲子和种子状态互斥
+    if (m_selectedSeed != nullptr && m_shovelSelected) {
+        // 如果同时选中了种子和铲子，自动取消铲子状态
+        SetShovelSelected(false);
+        if (m_shovelButton) {
+            m_shovelButton->SetSelected(false);
+        }
+    }
+
     return LevelStatus::ONGOING;
 }
 
@@ -126,6 +157,7 @@ void GameWorld::CleanUp() {
     m_gameObjects.clear();
 }
 
+// GameWorld.cpp
 std::shared_ptr<Grid> GameWorld::GetGridAt(int x, int y) {
     for (auto& grid : m_grids) {
         int gridLeft = grid->GetX() - LAWN_GRID_WIDTH / 2;
@@ -133,15 +165,58 @@ std::shared_ptr<Grid> GameWorld::GetGridAt(int x, int y) {
         int gridTop = grid->GetY() - LAWN_GRID_HEIGHT / 2;
         int gridBottom = grid->GetY() + LAWN_GRID_HEIGHT / 2;
 
+        // 添加调试输出
+        std::cout << "Checking grid at (" << grid->GetX() << ", " << grid->GetY() << ")"
+                  << " - Bounds: [" << gridLeft << "-" << gridRight << "], ["
+                  << gridTop << "-" << gridBottom << "]" << std::endl;
+
         if (x >= gridLeft && x <= gridRight &&
             y >= gridTop && y <= gridBottom) {
+            // 添加调试输出
+            std::cout << "Grid match found!" << std::endl;
             return grid;
+            }
+    }
+    return nullptr;
+}
+
+void GameWorld::RemovePlant(int x, int y) {
+    if (auto grid = GetGridAt(x, y)) {
+        if (auto plant = grid->GetPlant()) {
+            // 直接移除植物对象
+            plant->SetDead(true);
+            grid->SetPlant(nullptr);
+
+            // 强制更新对象列表
+            auto it = std::find_if(m_gameObjects.begin(), m_gameObjects.end(),
+                [&](const auto& obj) { return obj.get() == plant.get(); });
+            if (it != m_gameObjects.end()) {
+                m_gameObjects.erase(it);
+            }
+        }
+    }
+}
+
+std::shared_ptr<Plant> GameWorld::GetPlantAt(int x, int y) {
+    for (auto& obj : m_gameObjects) {
+        // 只检测植物对象
+        if (auto plant = std::dynamic_pointer_cast<Plant>(obj)) {
+            // 使用植物自身的碰撞检测方法
+            if (plant->ContainsPoint(x, y)) {
+                return plant;
+            }
         }
     }
     return nullptr;
 }
 
 void GameWorld::AddPlant(int x, int y) {
+    // 如果铲子被选中，则铲除植物而不是种植
+    if (m_shovelSelected) {
+        RemovePlant(x, y);
+        return;
+    }
+
     if (!m_selectedSeed) return;
 
     int price = m_selectedSeed->GetPrice();
@@ -179,5 +254,4 @@ void GameWorld::AddPlant(int x, int y) {
     AddSun(-price);
     m_selectedSeed = nullptr;
 }
-
 

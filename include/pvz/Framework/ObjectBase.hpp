@@ -35,6 +35,7 @@ public:
 
   bool IsDead() const { return m_isDead; }
   void SetDead(bool dead) { m_isDead = dead; }
+  ImageID GetImageID() const { return m_imageID; }
 
   LayerID GetLayer() const { return m_layer; } // 新增
 

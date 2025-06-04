@@ -9,7 +9,9 @@
 #include "pvz/Framework/TextBase.hpp"
 #include "pvz/utils.hpp"
 #include "pvz/GameObject/Grid.hpp"
+#include "pvz/GameObject/ShovelButton.hpp"
 
+class ShovelButton;
 class Peashooter;
 class Sunflower;
 class Wallnut;
@@ -44,13 +46,19 @@ public:
 
     int GetSunCount() const { return m_sunCount; }
 
+    void RemovePlant(int x, int y);
+
     // 添加获取游戏对象的方法
     const std::list<std::shared_ptr<GameObject>>& GetObjects() const {
         return m_gameObjects;
     }
 
     std::shared_ptr<Grid> GetGridAt(int x, int y);
+    std::shared_ptr<ShovelButton> GetShovelButton() const { return m_shovelButton; }
 
+    bool IsShovelSelected() const { return m_shovelSelected; }
+    void SetShovelSelected(bool selected) { m_shovelSelected = selected; }
+    std::shared_ptr<Plant> GetPlantAt(int x, int y);
 private:
     std::list<std::shared_ptr<GameObject>> m_gameObjects;
     SeedButton* m_selectedSeed = nullptr; // 当前选中的种子
@@ -58,6 +66,8 @@ private:
     int m_sunDropTimer;
     std::shared_ptr<TextBase> m_sunText;
     std::vector<std::shared_ptr<Grid>> m_grids;
+    bool m_shovelSelected = false; // 铲子选中状态
+    std::shared_ptr<ShovelButton> m_shovelButton; // 铲子按钮对象
 };
 
 #endif // !GAMEWORLD_HPP__
