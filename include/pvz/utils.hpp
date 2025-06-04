@@ -84,7 +84,6 @@ enum class LayerID {
   ZOMBIES,
   PROJECTILES,
   PLANTS,
-  COOLDOWN_MASK,
   UI,
   BACKGROUND,
 };
