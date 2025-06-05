@@ -13,9 +13,6 @@
     <ClCompile Include="C:\Users\YLBBK\Desktop\pvz_release2\attachment\src\GameObject\Sunflower.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\YLBBK\Desktop\pvz_release2\attachment\src\GameObject\Grid.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="C:\Users\YLBBK\Desktop\pvz_release2\attachment\src\GameObject\ShovelButton.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -41,6 +38,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="C:\Users\YLBBK\Desktop\pvz_release2\attachment\src\GameObject\Zombies.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YLBBK\Desktop\pvz_release2\attachment\src\GameObject\Grid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YLBBK\Desktop\pvz_release2\attachment\src\GameObject\CooldownMask.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

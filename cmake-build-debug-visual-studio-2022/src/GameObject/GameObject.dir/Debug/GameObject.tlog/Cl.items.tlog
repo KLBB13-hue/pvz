@@ -2,7 +2,6 @@ C:\Users\YLBBK\Desktop\pvz_release2\attachment\src\GameObject\GameObject.cpp;C:\
 C:\Users\YLBBK\Desktop\pvz_release2\attachment\src\GameObject\Background.cpp;C:\Users\YLBBK\Desktop\pvz_release2\attachment\cmake-build-debug-visual-studio-2022\src\GameObject\GameObject.dir\Debug\Background.obj
 C:\Users\YLBBK\Desktop\pvz_release2\attachment\src\GameObject\Plant.cpp;C:\Users\YLBBK\Desktop\pvz_release2\attachment\cmake-build-debug-visual-studio-2022\src\GameObject\GameObject.dir\Debug\Plant.obj
 C:\Users\YLBBK\Desktop\pvz_release2\attachment\src\GameObject\Sunflower.cpp;C:\Users\YLBBK\Desktop\pvz_release2\attachment\cmake-build-debug-visual-studio-2022\src\GameObject\GameObject.dir\Debug\Sunflower.obj
-C:\Users\YLBBK\Desktop\pvz_release2\attachment\src\GameObject\Grid.cpp;C:\Users\YLBBK\Desktop\pvz_release2\attachment\cmake-build-debug-visual-studio-2022\src\GameObject\GameObject.dir\Debug\Grid.obj
 C:\Users\YLBBK\Desktop\pvz_release2\attachment\src\GameObject\ShovelButton.cpp;C:\Users\YLBBK\Desktop\pvz_release2\attachment\cmake-build-debug-visual-studio-2022\src\GameObject\GameObject.dir\Debug\ShovelButton.obj
 C:\Users\YLBBK\Desktop\pvz_release2\attachment\src\GameObject\Sun.cpp;C:\Users\YLBBK\Desktop\pvz_release2\attachment\cmake-build-debug-visual-studio-2022\src\GameObject\GameObject.dir\Debug\Sun.obj
 C:\Users\YLBBK\Desktop\pvz_release2\attachment\src\GameObject\SeedButton.cpp;C:\Users\YLBBK\Desktop\pvz_release2\attachment\cmake-build-debug-visual-studio-2022\src\GameObject\GameObject.dir\Debug\SeedButton.obj
@@ -12,3 +11,5 @@ C:\Users\YLBBK\Desktop\pvz_release2\attachment\src\GameObject\CherryBomb.cpp;C:\
 C:\Users\YLBBK\Desktop\pvz_release2\attachment\src\GameObject\Repeater.cpp;C:\Users\YLBBK\Desktop\pvz_release2\attachment\cmake-build-debug-visual-studio-2022\src\GameObject\GameObject.dir\Debug\Repeater.obj
 C:\Users\YLBBK\Desktop\pvz_release2\attachment\src\GameObject\Pea.cpp;C:\Users\YLBBK\Desktop\pvz_release2\attachment\cmake-build-debug-visual-studio-2022\src\GameObject\GameObject.dir\Debug\Pea.obj
 C:\Users\YLBBK\Desktop\pvz_release2\attachment\src\GameObject\Zombies.cpp;C:\Users\YLBBK\Desktop\pvz_release2\attachment\cmake-build-debug-visual-studio-2022\src\GameObject\GameObject.dir\Debug\Zombies.obj
+C:\Users\YLBBK\Desktop\pvz_release2\attachment\src\GameObject\Grid.cpp;C:\Users\YLBBK\Desktop\pvz_release2\attachment\cmake-build-debug-visual-studio-2022\src\GameObject\GameObject.dir\Debug\Grid.obj
+C:\Users\YLBBK\Desktop\pvz_release2\attachment\src\GameObject\CooldownMask.cpp;C:\Users\YLBBK\Desktop\pvz_release2\attachment\cmake-build-debug-visual-studio-2022\src\GameObject\GameObject.dir\Debug\CooldownMask.obj

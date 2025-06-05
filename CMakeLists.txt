@@ -56,6 +56,8 @@ add_executable(
         include/pvz/GameObject/Zombies.hpp
         include/pvz/GameObject/Zombies.hpp
         include/pvz/GameObject/Pea.hpp
+        include/pvz/GameObject/Grid.hpp
+        include/pvz/GameObject/CooldownMask.hpp
 )
 
 target_link_libraries(

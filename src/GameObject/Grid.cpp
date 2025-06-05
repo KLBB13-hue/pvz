@@ -5,7 +5,7 @@
 
 // 修改：使用 LAYER_UI 层级，尺寸设为 60x80
 Grid::Grid(int x, int y, GameWorld* world)
-    : GameObject(ImageID::NONE, x, y, LayerID::UI,
+    : GameObject(ImageID::NONE, x, y, LayerID::NEW,
                 60, 80, AnimID::NO_ANIMATION), // 修改尺寸为 60x80
       m_world(world) {}
 

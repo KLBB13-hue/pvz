@@ -7,7 +7,6 @@ add_library(
         Background.cpp
         Plant.cpp
         Sunflower.cpp
-        Grid.cpp
         ShovelButton.cpp
         Sun.cpp
         SeedButton.cpp
@@ -17,6 +16,8 @@ add_library(
         Repeater.cpp
         Pea.cpp
         Zombies.cpp
+        Grid.cpp
+        CooldownMask.cpp
 )
 
 target_link_libraries(

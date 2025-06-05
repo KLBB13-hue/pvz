@@ -26,7 +26,7 @@ public:
   int GetHeight() const;
 
   void MoveTo(int x, int y);
-  
+
   AnimID GetCurrentAnimation() const;
   void ChangeImage(ImageID imageID);
   void PlayAnimation(AnimID animID);

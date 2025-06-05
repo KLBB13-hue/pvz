@@ -6,3 +6,4 @@ GameObject::GameObject(ImageID imageID, int x, int y, LayerID layer, int width, 
     : ObjectBase(imageID, x, y, layer, width, height, animID) {
     // Additional initialization if needed
 }
+

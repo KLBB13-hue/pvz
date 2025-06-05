@@ -77,15 +77,18 @@ enum class ImageID {
 
 enum class AnimID { NO_ANIMATION = 0, IDLE, WALK, EAT, RUN, JUMP };
 
-const int MAX_LAYERS = 7;
+const int MAX_LAYERS = 8;
 
 enum class LayerID {
   SUN = 0,
+  NEW,
   ZOMBIES,
   PROJECTILES,
   PLANTS,
+  COOLDOWNMASK,
   UI,
-  BACKGROUND,
+
+  BACKGROUND ,
 };
 
 const int MS_PER_FRAME = 33;

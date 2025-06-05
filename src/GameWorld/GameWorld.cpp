@@ -9,6 +9,7 @@
 #include "pvz/utils.hpp"
 #include "pvz/GameObject/SeedButton.hpp"
 #include "pvz/GameObject/Sun.hpp"
+#include "pvz/GameObject/ShovelButton.hpp"
 
 void GameWorld::Init() {
     // 创建背景
@@ -48,11 +49,12 @@ void GameWorld::Init() {
     int seedButtonX = 130;
     m_sunDropTimer = 180;
 
+
     // 向日葵种子
     AddObject(std::make_shared<SeedButton>(
         ImageID::SEED_SUNFLOWER,
         seedButtonX, seedButtonY,
-        50, this
+        50, 240,this
     ));
 
     // 豌豆射手种子
@@ -60,7 +62,7 @@ void GameWorld::Init() {
     AddObject(std::make_shared<SeedButton>(
         ImageID::SEED_PEASHOOTER,
         seedButtonX, seedButtonY,
-        100, this
+        100, 240,this
     ));
 
     // 坚果墙种子
@@ -68,7 +70,7 @@ void GameWorld::Init() {
     AddObject(std::make_shared<SeedButton>(
         ImageID::SEED_WALLNUT,
         seedButtonX, seedButtonY,
-        50, this
+        50, 900,this
     ));
 
     // 樱桃炸弹种子
@@ -76,7 +78,7 @@ void GameWorld::Init() {
     AddObject(std::make_shared<SeedButton>(
         ImageID::SEED_CHERRY_BOMB,
         seedButtonX, seedButtonY,
-        150, this
+        150, 1200,this
     ));
 
     // 双发射手种子
@@ -84,7 +86,7 @@ void GameWorld::Init() {
     AddObject(std::make_shared<SeedButton>(
         ImageID::SEED_REPEATER,
         seedButtonX, seedButtonY,
-        200, this
+        200, 240,this
     ));
 
     int shovelX = 600;
@@ -211,6 +213,7 @@ std::shared_ptr<Plant> GameWorld::GetPlantAt(int x, int y) {
 }
 
 void GameWorld::AddPlant(int x, int y) {
+
     // 如果铲子被选中，则铲除植物而不是种植
     if (m_shovelSelected) {
         RemovePlant(x, y);
@@ -250,8 +253,13 @@ void GameWorld::AddPlant(int x, int y) {
         }
     }
 
+    // 成功种植植物后
+    if (m_selectedSeed) {
+        // 调用种子按钮的冷却开始
+        m_selectedSeed->StartCooldown();
+    }
+
     AddObject(newPlant);
     AddSun(-price);
     m_selectedSeed = nullptr;
 }
-
