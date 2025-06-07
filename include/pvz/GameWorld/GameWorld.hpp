@@ -66,7 +66,7 @@ public:
 private:
     std::list<std::shared_ptr<GameObject>> m_gameObjects;
     SeedButton* m_selectedSeed = nullptr; // 当前选中的种子
-    int m_sunCount = 50;
+    int m_sunCount = 500;
     int m_sunDropTimer;
     std::shared_ptr<TextBase> m_sunText;
     std::vector<std::shared_ptr<Grid>> m_grids;

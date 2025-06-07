@@ -36,42 +36,33 @@ void Pea::Update() {
 }
 
 bool Pea::CheckCollisionWithZombies() {
-    // 获取游戏世界中的所有对象
     const auto& objects = m_world->GetObjects();
-    std::shared_ptr<GameObject> targetZombie = nullptr; // 目标僵尸（最左侧）
-    int minX = INT_MAX; // 记录最左侧的x坐标
+    bool collisionOccurred = false;
 
     for (const auto& obj : objects) {
-        // 只检查存活的僵尸对象
         if (obj->GetLayer() == LayerID::ZOMBIES && !obj->IsDead()) {
-            // 计算两对象中心点的距离
-            int dx = abs(GetX() - obj->GetX());
-            int dy = abs(GetY() - obj->GetY());
+            // 计算碰撞边界
+            int peaLeft = GetX() - GetWidth() / 2;
+            int peaRight = GetX() + GetWidth() / 2;
+            int peaTop = GetY() - GetHeight() / 2;
+            int peaBottom = GetY() + GetHeight() / 2;
 
-            // 计算碰撞所需的最小距离
-            int min_dist_x = (GetWidth() + obj->GetWidth()) / 2;
-            int min_dist_y = (GetHeight() + obj->GetHeight()) / 2;
+            int zombieLeft = obj->GetX() - obj->GetWidth() / 2;
+            int zombieRight = obj->GetX() + obj->GetWidth() / 2;
+            int zombieTop = obj->GetY() - obj->GetHeight() / 2;
+            int zombieBottom = obj->GetY() + obj->GetHeight() / 2;
 
-            // 检测碰撞（中心和边缘距离都需满足条件）
-            if (dx < min_dist_x && dy < min_dist_y) {
-                // 找到最左侧的僵尸
-                if (obj->GetX() < minX) {
-                    minX = obj->GetX();
-                    targetZombie = obj;
+            // 检查碰撞
+            if (peaRight >= zombieLeft && peaLeft <= zombieRight &&
+                peaBottom >= zombieTop && peaTop <= zombieBottom) {
+                // 对僵尸造成20点伤害
+                if (auto zombie = dynamic_cast<Zombie*>(obj.get())) {
+                    zombie->TakeDamage(20);
                 }
-            }
+                collisionOccurred = true;
+                }
         }
     }
 
-    // 如果找到碰撞目标
-    if (targetZombie) {
-        // 对僵尸造成伤害
-        auto zombie = dynamic_cast<Zombie*>(targetZombie.get());
-        if (zombie) {
-            zombie->TakeDamage(20);
-        }
-        return true;  // 发生碰撞
-    }
-
-    return false;  // 未发生碰撞
+    return collisionOccurred;
 }

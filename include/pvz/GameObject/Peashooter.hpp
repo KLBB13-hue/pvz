@@ -13,6 +13,7 @@ public:
     // 添加 Update() 方法覆盖
     void Update() override;
 
+
 private:
     GameWorld* m_world; // 添加指向 GameWorld 的指针
     int m_shootCooldown = 0; // 添加发射冷却计时器

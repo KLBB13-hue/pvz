@@ -6,8 +6,8 @@ Peashooter::Peashooter(int x, int y, GameWorld* world)
     : Plant(ImageID::PEASHOOTER,
             x, y,
             LayerID::PLANTS,
-            LAWN_GRID_WIDTH,
-            LAWN_GRID_HEIGHT,
+            60,
+            80,
             AnimID::IDLE,300),
       m_world(world), // 初始化 m_world
       m_shootCooldown(0) // 初始化冷却计时器
@@ -15,28 +15,48 @@ Peashooter::Peashooter(int x, int y, GameWorld* world)
     // 构造函数完成
 }
 
-// 添加 Update() 方法实现
 void Peashooter::Update() {
-    Plant::Update(); // 调用基类更新
-
-    // 发射冷却计时
-    if (m_shootCooldown > 0) {
-        m_shootCooldown--;
+    // 步骤1: 检查是否死亡
+    if (IsDead()) {
+        return;
     }
 
-    // 冷却结束，发射豌豆
-    if (m_shootCooldown <= 0) {
-        // 在豌豆射手右侧创建豌豆
-        int peaX = GetX() + GetWidth()/2 + 20; // 豌豆射手右侧
-        int peaY = GetY() + GetHeight()/2 - 30;
+    Plant::Update();
 
-        // 创建豌豆对象
+    // 步骤2: 处理冷却时间
+    if (m_shootCooldown > 0) {
+        m_shootCooldown--;
+        return; // 冷却期间直接返回
+    }
+
+    // 步骤3: 检查右侧是否有僵尸
+    bool zombieFound = false;
+    const auto& objects = m_world->GetObjects();
+
+    for (const auto& obj : objects) {
+        if (obj->GetLayer() == LayerID::ZOMBIES && !obj->IsDead()) {
+            // 检查是否在同一行 (Y坐标差小于40像素)
+            int dy = abs(GetY() - obj->GetY());
+            if (dy <= 40) {
+                // 检查是否在右侧 (X坐标大于豌豆射手)
+                if (obj->GetX() > GetX()) {
+                    zombieFound = true;
+                    break;
+                }
+            }
+        }
+    }
+
+    if (zombieFound) {
+        // 在右方30像素、上方20像素位置生成豌豆
+        int peaX = GetX() + 30;
+        int peaY = GetY() + 10;
+
         auto pea = std::make_shared<Pea>(peaX, peaY, m_world);
-
-        // 添加到游戏世界
         m_world->AddObject(pea);
 
-        // 重置冷却时间（约3秒）
+        // 进入30 tick冷却时间
         m_shootCooldown = 30;
     }
 }
+

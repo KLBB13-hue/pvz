@@ -11,10 +11,11 @@ public:
     Pea(int x, int y, GameWorld* world);
     void Update() override;
     void OnClick() override {} // 空实现
+    bool CheckCollisionWithZombies();
 
 private:
     GameWorld* m_world; // 用于访问游戏世界
-    bool CheckCollisionWithZombies();
+
 };
 
 #endif // !PEA_HPP__
