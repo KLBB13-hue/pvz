@@ -10,6 +10,8 @@
 #include "pvz/GameObject/SeedButton.hpp"
 #include "pvz/GameObject/Sun.hpp"
 #include "pvz/GameObject/ShovelButton.hpp"
+#include "pvz/GameObject/Zombies.hpp"
+#include "pvz/GameObject/SpecificZombies.hpp"
 
 void GameWorld::Init() {
     // 创建背景
@@ -41,6 +43,15 @@ void GameWorld::Init() {
         "50",
         0.0, 0.0, 0.0,
         false
+    );
+
+    // 创建波数文本显示 - 添加在Init()函数末尾
+    m_waveText = std::make_shared<TextBase>(
+        WINDOW_WIDTH - 160, // x位置
+        8,                  // y位置
+        "Wave: 1",          // 初始文本
+        0.0, 0.0, 0.0,      // 黑色文本
+        true                // 居中显示
     );
 
     // 初始化状态
@@ -103,11 +114,48 @@ void GameWorld::AddSun(int amount) {
     m_sunText->SetText(buffer);
 }
 
+
+
 LevelStatus GameWorld::Update() {
+
     char buffer[20];
     sprintf(buffer, "%d", m_sunCount);
     m_sunText->SetText(buffer);
 
+    // 更新波数文本显示 - 添加在Update()函数中合适位置
+    char waveBuffer[20];
+    sprintf(waveBuffer, "Wave: %d", m_waveCount);
+    m_waveText->SetText(waveBuffer);
+
+    // 波数生成逻辑
+    if (--m_nextWaveTimer <= 0) {
+        GenerateWave(); // 生成新一波僵尸
+
+        // 计算下一波间隔
+        m_nextWaveTimer = std::max(150, 600 - 20 * m_waveCount);
+    }
+
+    // 检测是否有僵尸到达左边界（失败条件）
+    for (auto& obj : m_gameObjects) {
+        if (auto zombie = std::dynamic_pointer_cast<Zombie>(obj)) {
+            if (zombie->GetX() < 0) {
+
+                // 创建僵尸胜利图片（覆盖整个屏幕）
+                auto zombiesWonImage = std::make_shared<Background>(
+                    ImageID::ZOMBIES_WON,
+                    WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2,
+                    LayerID::UI,  // 放在UI层，确保在最上面
+                    WINDOW_WIDTH, WINDOW_HEIGHT,
+                    AnimID::NO_ANIMATION
+                );
+                AddObject(zombiesWonImage);
+                return LevelStatus::LOSING;
+            }
+        }
+    }
+
+
+    bool allZombiesDefeated = true;
     auto it = m_gameObjects.begin();
     while (it != m_gameObjects.end()) {
         auto& obj = *it;
@@ -155,8 +203,25 @@ LevelStatus GameWorld::Update() {
     return LevelStatus::ONGOING;
 }
 
+
 void GameWorld::CleanUp() {
+    // 正常清理流程
     m_gameObjects.clear();
+    m_grids.clear();
+
+    // 重置游戏状态变量
+    m_selectedSeed = nullptr;
+    m_sunCount = 50;
+    m_waveCount = 0;
+    m_nextWaveTimer = 1200;
+    m_sunDropTimer = 180;
+    m_shovelSelected = false;
+
+    m_sunText.reset();
+    m_waveText.reset();
+
+
+    // 注意：不需要在这里调用Init()，因为GameManager会处理重新初始化
 }
 
 // GameWorld.cpp
@@ -262,4 +327,68 @@ void GameWorld::AddPlant(int x, int y) {
     AddObject(newPlant);
     AddSun(-price);
     m_selectedSeed = nullptr;
+}
+
+// 生成一波僵尸
+void GameWorld::GenerateWave() {
+    m_waveCount++; // 增加波数计数
+
+    // 计算本波僵尸数量
+    int zombieCount = (15 + m_waveCount) / 10;
+
+    // 计算僵尸类型概率
+    int P1 = 20;
+    int P2 = 2 * std::max(m_waveCount - 8, 0);
+    int P3 = 3 * std::max(m_waveCount - 15, 0);
+    int totalProb = P1 + P2 + P3;
+
+    // 如果没有有效的概率，默认普通僵尸
+    if (totalProb <= 0) {
+        P1 = 1;
+        totalProb = 1;
+    }
+
+    // 生成本波僵尸
+    for (int i = 0; i < zombieCount; i++) {
+        // 随机选择僵尸类型
+        int randType = randInt(0, totalProb - 1);
+        ZombieType type;
+
+        if (randType < P1) {
+            type = NORMAL_ZOMBIE;
+        } else if (randType < P1 + P2) {
+            type = POLE_VAULTING_ZOMBIE;
+        } else {
+            type = BUCKET_HEAD_ZOMBIE;
+        }
+
+        // 随机位置
+        int x = randInt(WINDOW_WIDTH - 40, WINDOW_WIDTH - 1);
+        int row = randInt(0, GAME_ROWS - 1);
+        int y = FIRST_ROW_CENTER + row * LAWN_GRID_HEIGHT;
+
+        // 创建僵尸对象
+        std::shared_ptr<Zombie> zombie;
+        switch (type) {
+        case NORMAL_ZOMBIE:
+            zombie = std::make_shared<NormalZombie>(x, y, this);
+            break;
+        case POLE_VAULTING_ZOMBIE:
+            zombie = std::make_shared<PoleVaultingZombie>(x, y, this);
+            break;
+        case BUCKET_HEAD_ZOMBIE:
+            zombie = std::make_shared<BucketHeadZombie>(x, y, this);
+            break;
+        }
+
+        // 添加到游戏世界
+        if (zombie) {
+            AddObject(zombie);
+        }
+    }
+
+    // 更新波数文本
+    char waveBuffer[20];
+    sprintf(waveBuffer, "Wave: %d", m_waveCount);
+    m_waveText->SetText(waveBuffer);
 }

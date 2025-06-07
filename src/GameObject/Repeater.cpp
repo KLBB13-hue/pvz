@@ -6,6 +6,6 @@ Repeater::Repeater(int x, int y, GameWorld* world)
             LayerID::PLANTS,
             LAWN_GRID_WIDTH,
             LAWN_GRID_HEIGHT,
-            AnimID::IDLE) {
+            AnimID::IDLE,300) {
     // 双发射手只需要显示
 }

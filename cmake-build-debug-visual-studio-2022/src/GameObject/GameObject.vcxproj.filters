@@ -46,6 +46,9 @@
     <ClCompile Include="C:\Users\YLBBK\Desktop\pvz_release2\attachment\src\GameObject\CooldownMask.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\YLBBK\Desktop\pvz_release2\attachment\src\GameObject\SpecficZombies.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\Users\YLBBK\Desktop\pvz_release2\attachment\src\GameObject\CMakeLists.txt" />

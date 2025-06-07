@@ -48,6 +48,9 @@ public:
 
     void RemovePlant(int x, int y);
 
+
+    void GenerateWave();
+
     // 添加获取游戏对象的方法
     const std::list<std::shared_ptr<GameObject>>& GetObjects() const {
         return m_gameObjects;
@@ -55,6 +58,7 @@ public:
 
     std::shared_ptr<Grid> GetGridAt(int x, int y);
     std::shared_ptr<ShovelButton> GetShovelButton() const { return m_shovelButton; }
+
 
     bool IsShovelSelected() const { return m_shovelSelected; }
     void SetShovelSelected(bool selected) { m_shovelSelected = selected; }
@@ -68,6 +72,11 @@ private:
     std::vector<std::shared_ptr<Grid>> m_grids;
     bool m_shovelSelected = false; // 铲子选中状态
     std::shared_ptr<ShovelButton> m_shovelButton; // 铲子按钮对象
+    int m_waveCount = 0; // 初始为第0波
+    int m_nextWaveTimer = 1200;
+    std::shared_ptr<TextBase> m_waveText;
+
+
 };
 
 #endif // !GAMEWORLD_HPP__

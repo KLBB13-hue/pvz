@@ -6,6 +6,6 @@ CherryBomb::CherryBomb(int x, int y, GameWorld* world)
             LayerID::PLANTS,
             LAWN_GRID_WIDTH,
             LAWN_GRID_HEIGHT,
-            AnimID::IDLE) {
+            AnimID::IDLE,4000) {
     // 樱桃炸弹只需要显示
 }

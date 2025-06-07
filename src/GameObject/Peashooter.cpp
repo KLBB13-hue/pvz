@@ -8,7 +8,7 @@ Peashooter::Peashooter(int x, int y, GameWorld* world)
             LayerID::PLANTS,
             LAWN_GRID_WIDTH,
             LAWN_GRID_HEIGHT,
-            AnimID::IDLE),
+            AnimID::IDLE,300),
       m_world(world), // 初始化 m_world
       m_shootCooldown(0) // 初始化冷却计时器
 {

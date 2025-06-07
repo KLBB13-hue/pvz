@@ -18,6 +18,7 @@ add_library(
         Zombies.cpp
         Grid.cpp
         CooldownMask.cpp
+        SpecficZombies.cpp
 )
 
 target_link_libraries(

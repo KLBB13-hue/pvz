@@ -5,8 +5,10 @@
 
 class Plant : public GameObject {
 public:
-    Plant(ImageID imageID, int x, int y, LayerID layer, int width, int height, AnimID animID);
+    Plant(ImageID imageID, int x, int y, LayerID layer, int width, int height, AnimID animID,int hp);
     virtual ~Plant() = default;
+    int GetHP() const;
+    void TakeDamage(int damage); // 添加受伤方法
 
     // 添加虚函数声明
     virtual void Update() override;
@@ -26,6 +28,8 @@ public:
 
 private:
     GameWorld* m_world = nullptr;
+    int m_hp;
+
 
 };
 

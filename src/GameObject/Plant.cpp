@@ -2,8 +2,8 @@
 #include "pvz/GameWorld/GameWorld.hpp"
 
 Plant::Plant(ImageID imageID, int x, int y, LayerID layer,
-             int width, int height, AnimID animID)
-    : GameObject(imageID, x, y, layer, width, height, animID) {}
+             int width, int height, AnimID animID, int hp)
+    : GameObject(imageID, x, y, layer, width, height, animID), m_hp(hp){}
 
 void Plant::Update() {}
 
@@ -17,4 +17,15 @@ GameWorld* Plant::GetWorld() const {
 
 void Plant::SetWorld(GameWorld* world) {
     m_world = world;
+}
+
+int Plant::GetHP() const {
+    return m_hp;
+}
+
+void Plant::TakeDamage(int damage) {
+    m_hp -= damage;
+    if (m_hp <= 0) {
+        SetDead(true);
+    }
 }

@@ -11,7 +11,7 @@ Sunflower::Sunflower(int x, int y, GameWorld* world)
             LayerID::PLANTS,
             LAWN_GRID_WIDTH,
             LAWN_GRID_HEIGHT,
-            AnimID::IDLE),
+            AnimID::IDLE,300),
       m_world(world),
       m_sunTimer(randInt(300, 450)) { // 随机初始计时器(10-15秒)
     std::cout << "向日葵种植在 (" << x << ", " << y << ")\n";
