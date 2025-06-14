@@ -2,20 +2,11 @@
 #ifndef SUNFLOWER_HPP__
 #define SUNFLOWER_HPP__
 
-#include "Plant.hpp"
-#include "pvz/GameWorld/GameWorld.hpp" // 添加GameWorld引用
+#include "pvz/GameObject/SunProducer.hpp"
 
-class Sunflower : public Plant {
+class Sunflower : public SunProducer {
 public:
-    Sunflower(int x, int y, GameWorld* world); // 添加world参数
-    virtual ~Sunflower() = default;
-
-    void Update() override;
-    void OnClick() override;
-
-private:
-    GameWorld* m_world;   // 指向所属GameWorld
-    int m_sunTimer;       // 阳光生成计时器
+    Sunflower(int x, int y, GameWorld* world);
 };
 
 #endif // !SUNFLOWER_HPP__

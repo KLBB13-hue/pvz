@@ -12,13 +12,13 @@ public:
 
     void Update() override;
 
-    // 覆盖点击检测方法，使其永远返回false
+
     bool CanBeClicked(int x, int y) const override;
 
-    // 覆盖点击处理方法，使其为空
+
     void OnClick() override {}
 
-    // 设置关联的种子按钮
+
     void SetSeedButton(SeedButton* button) { m_seedButton = button; }
 
 private:

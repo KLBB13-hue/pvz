@@ -13,7 +13,7 @@ public:
 
 private:
     GameWorld* m_world;
-    int m_lifetime = 3; // 存在3帧
+    int m_lifetime = 3;
 };
 
 #endif // !EXPLOSION_HPP__

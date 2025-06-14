@@ -1,17 +1,13 @@
 #include "pvz/GameObject/Zombies.hpp"
-#include "pvz/GameObject/Plant.hpp" // 添加Plant头文件
 #include "pvz/GameWorld/GameWorld.hpp"
-
-
 
 Zombie::Zombie(ImageID imageID, int x, int y, int width, int height,
                int health, GameWorld* world)
     : GameObject(imageID, x, y, LayerID::ZOMBIES, width, height, AnimID::WALK),
       m_health(health),
       m_world(world),
-    m_currentAnim(AnimID::WALK)
-{
-    // 构造函数
+      m_width(width),
+      m_height(height){
 }
 
 void Zombie::TakeDamage(int amount) {
@@ -21,23 +17,31 @@ void Zombie::TakeDamage(int amount) {
     }
 }
 
-void Zombie::Update() {
-    // 如果已经死亡，直接返回
-    if (IsDead()) {
-        return;
+void Zombie::SetState(AnimID animID) {
+    if (m_currentAnim != animID) {
+        m_currentAnim = animID;
+        PlayAnimation(animID);
     }
+}
 
-    // 攻击冷却计时
+void Zombie::Update() {
+    if (IsDead()) return;
+
     if (m_attackCooldown > 0) {
         m_attackCooldown--;
     }
+
+    PerformAction();
+}
+
+void Zombie::Move() {
+    MoveTo(GetX() - 1, GetY());
 }
 
 void Zombie::AttackPlant() {
     if (m_attackCooldown > 0) return;
 
-    // 使用与NormalZombie一致的检测位置
-    int gridX = GetX() - GetWidth()/2;
+    int gridX = GetX() - m_width / 2;
     int gridY = GetY();
     auto plant = m_world->GetPlantAt(gridX, gridY);
 
@@ -46,5 +50,4 @@ void Zombie::AttackPlant() {
         m_attackCooldown = 1;
     }
 }
-
 

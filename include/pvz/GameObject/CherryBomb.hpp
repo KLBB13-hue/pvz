@@ -1,9 +1,8 @@
+// CherryBomb.hpp
 #ifndef CHERRY_BOMB_HPP__
 #define CHERRY_BOMB_HPP__
 
 #include "Plant.hpp"
-
-class Explosion; // 前置声明
 
 class CherryBomb : public Plant {
 public:
@@ -12,7 +11,7 @@ public:
 
 private:
     GameWorld* m_world;
-    int m_countdown = 15; // 15帧后爆炸
+    int m_countdown = 15;
 };
 
 #endif // !CHERRY_BOMB_HPP__

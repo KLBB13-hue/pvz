@@ -6,19 +6,22 @@
 class NormalZombie : public Zombie {
 public:
     NormalZombie(int x, int y, GameWorld* world);
-    void Update() override; // 添加Update方法声明
+    void PerformAction() override;
 };
 
 class PoleVaultingZombie : public Zombie {
 public:
     PoleVaultingZombie(int x, int y, GameWorld* world);
-    void Update() override; // 添加Update方法声明
+    void PerformAction() override;
+
+private:
+    bool m_hasPole = true;
 };
 
 class BucketHeadZombie : public Zombie {
 public:
     BucketHeadZombie(int x, int y, GameWorld* world);
-    void Update() override; // 添加Update方法声明
+    void PerformAction() override;
 };
 
 #endif // SPECIFIC_ZOMBIES_HPP

@@ -5,32 +5,25 @@
 
 class Plant : public GameObject {
 public:
-    Plant(ImageID imageID, int x, int y, LayerID layer, int width, int height, AnimID animID,int hp);
+    Plant(ImageID imageID, int x, int y, LayerID layer,
+          int width, int height, AnimID animID, int hp);
     virtual ~Plant() = default;
+
     int GetHP() const;
-    void TakeDamage(int damage); // 添加受伤方法
-
-    // 添加虚函数声明
+    void TakeDamage(int damage);
     virtual void Update() override;
-    virtual void OnClick() override;
 
-    virtual bool CanBeShoveled() const { return true; } // 新增
+    virtual void OnClick() override;
+    virtual bool CanBeShoveled() const { return true; }
+
     void SetWorld(GameWorld* world);
     GameWorld* GetWorld() const;
 
-    bool ContainsPoint(int x, int y) const {
-        int left = GetX() - GetWidth() / 2;
-        int right = GetX() + GetWidth() / 2;
-        int top = GetY() - GetHeight() / 2;
-        int bottom = GetY() + GetHeight() / 2;
-        return (x >= left && x <= right && y >= top && y <= bottom);
-    }
+    bool ContainsPoint(int x, int y) const;
 
 private:
     GameWorld* m_world = nullptr;
     int m_hp;
-
-
 };
 
 #endif // !PLANT_HPP__

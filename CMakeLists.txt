@@ -58,6 +58,8 @@ add_executable(
         include/pvz/GameObject/Pea.hpp
         include/pvz/GameObject/Grid.hpp
         include/pvz/GameObject/CooldownMask.hpp
+        include/pvz/GameObject/ShooterPlant.hpp
+        include/pvz/GameObject/SunProducer.hpp
 )
 
 target_link_libraries(

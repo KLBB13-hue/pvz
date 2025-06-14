@@ -1,17 +1,18 @@
+// Repeater.hpp
 #ifndef REPEATER_HPP__
 #define REPEATER_HPP__
 
-#include "Plant.hpp"
-#include "pvz/GameWorld/GameWorld.hpp"
+#include "pvz/GameObject/ShooterPlant.hpp"
 
-class Repeater : public Plant {
+class Repeater : public ShooterPlant {
 public:
     Repeater(int x, int y, GameWorld* world);
     void Update() override;
 
 private:
-    GameWorld* m_world;
-    int m_shootCooldown = 0;
+    void CreateProjectile() override;
+    void ShootSecond();
+
     int m_secondShotTimer = 0;
     bool m_shouldShootSecond = false;
 };

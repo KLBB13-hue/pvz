@@ -52,6 +52,12 @@
     <ClCompile Include="C:\Users\YLBBK\Desktop\pvz_release2\attachment\src\GameObject\Explosion.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\YLBBK\Desktop\pvz_release2\attachment\src\GameObject\ShooterPlant.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\YLBBK\Desktop\pvz_release2\attachment\src\GameObject\Sunproducer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\Users\YLBBK\Desktop\pvz_release2\attachment\src\GameObject\CMakeLists.txt" />

@@ -27,7 +27,7 @@ public:
 private:
     GameWorld* m_world;
     int m_price;
-    int m_cooldown; // 冷却时间（帧数）
+    int m_cooldown; // 冷却时间
     int m_cooldownTimer = 0; // 冷却计时器
     ImageID m_plantImageID;
     std::shared_ptr<CooldownMask> m_cooldownMask; // 冷却遮盖物

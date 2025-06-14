@@ -1,4 +1,3 @@
-/// Zombie.hpp
 #ifndef ZOMBIE_HPP__
 #define ZOMBIE_HPP__
 
@@ -6,16 +5,10 @@
 
 class GameWorld;
 
-enum ZombieType {
-    NORMAL_ZOMBIE,
-    POLE_VAULTING_ZOMBIE,
-    BUCKET_HEAD_ZOMBIE
-};
-
-// 新增：僵尸行为状态枚举
-enum class ZombieState {
-    WALKING,
-    EATING
+enum class ZombieType {
+    NORMAL,
+    POLE_VAULTING,
+    BUCKET_HEAD
 };
 
 class Zombie : public GameObject {
@@ -27,20 +20,39 @@ public:
     void TakeDamage(int amount);
     virtual void Update() override;
 
-    // 使用 AnimID 表示状态
     AnimID GetState() const { return m_currentAnim; }
-    AnimID SetState(AnimID animID) { return m_currentAnim = animID; }
+    void SetState(AnimID animID);
 
-    // 攻击植物的方法
     void AttackPlant();
 
+    ZombieType GetType() const { return m_type; }
+
+    // 碰撞检测方法
+    bool CheckCollision(int x, int y, int width, int height) const {
+        const int zLeft = GetX() - GetWidth()/2;
+        const int zRight = GetX() + GetWidth()/2;
+        const int zTop = GetY() - GetHeight()/2;
+        const int zBottom = GetY() + GetHeight()/2;
+
+        return (x + width >= zLeft) && (x <= zRight) &&
+               (y + height >= zTop) && (y <= zBottom);
+    }
+
 protected:
+    virtual void PerformAction() = 0; // 纯虚函数，由子类实现
+
+    void Move();
+
+    ZombieType m_type;
     int m_health;
     GameWorld* m_world;
-    int m_attackCooldown = 0; // 攻击冷却计时器
-    AnimID m_currentAnim ;
+    int m_attackCooldown = 0;
+    AnimID m_currentAnim = AnimID::WALK;
+
+private:
+    int m_width;
+    int m_height;
 };
 
 #endif // ZOMBIE_HPP__
-
 

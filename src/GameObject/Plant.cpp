@@ -3,13 +3,12 @@
 
 Plant::Plant(ImageID imageID, int x, int y, LayerID layer,
              int width, int height, AnimID animID, int hp)
-    : GameObject(imageID, x, y, layer, width, height, animID), m_hp(hp){}
+    : GameObject(imageID, x, y, layer, width, height, animID),
+      m_hp(hp) {}
 
 void Plant::Update() {}
 
-void Plant::OnClick() {
-    // 空实现，无铲子功能
-}
+void Plant::OnClick() {}
 
 GameWorld* Plant::GetWorld() const {
     return m_world;
@@ -28,4 +27,12 @@ void Plant::TakeDamage(int damage) {
     if (m_hp <= 0) {
         SetDead(true);
     }
+}
+
+bool Plant::ContainsPoint(int x, int y) const {
+    int left = GetX() - GetWidth() / 2;
+    int right = GetX() + GetWidth() / 2;
+    int top = GetY() - GetHeight() / 2;
+    int bottom = GetY() + GetHeight() / 2;
+    return (x >= left && x <= right && y >= top && y <= bottom);
 }

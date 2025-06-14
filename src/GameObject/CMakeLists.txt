@@ -20,6 +20,8 @@ add_library(
         CooldownMask.cpp
         SpecficZombies.cpp
         Explosion.cpp
+        ShooterPlant.cpp
+        Sunproducer.cpp
 )
 
 target_link_libraries(
